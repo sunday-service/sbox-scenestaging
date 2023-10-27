@@ -1,8 +1,8 @@
 {
-  "Title": "Testbed",
+  "Title": "Wizards Scene System",
   "Type": "game",
-  "Org": "facepunch",
-  "Ident": "testbed",
+  "Org": "sundayservice",
+  "Ident": "wizards",
   "Tags": null,
   "Schema": 1,
   "HasAssets": true,
