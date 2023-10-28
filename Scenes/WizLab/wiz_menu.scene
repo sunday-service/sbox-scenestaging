@@ -1,0 +1,216 @@
+{
+  "GameObjects": [
+    {
+      "Id": "7c163f9b-273d-41e8-91d6-9f096d02854b",
+      "Name": "Camera",
+      "Enabled": true,
+      "Position": "577.7551,0,0",
+      "Rotation": "0.000000003838792,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "__enabled": true,
+          "BackgroundColor": "0.07632,0.07862,0.08911,1",
+          "ClearFlags": "Color, Depth, Stencil",
+          "FieldOfView": 79.68,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "ZFar": 2136.4,
+          "ZNear": 1
+        },
+        {
+          "__type": "CameraPhysicsDebug",
+          "__enabled": true,
+          "MaxPoints": 10000,
+          "NormalLength": 2,
+          "TracesPerFrame": 500,
+          "TraceType": "Ray"
+        }
+      ]
+    },
+    {
+      "Id": "33577379-4b88-4a04-bb85-6a86b5e70db0",
+      "Name": "Screen UI",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ScreenPanel",
+          "__enabled": true,
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        }
+      ],
+      "Children": [
+        {
+          "Id": "6aaac9a1-c149-404b-ada2-dab7e6c628b2",
+          "Name": "Point Light",
+          "Enabled": true,
+          "Position": "1933.547,0,-19.39837",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "PointLightComponent",
+              "__enabled": true,
+              "LightColor": "1,0,0,1",
+              "Radius": 400
+            }
+          ]
+        },
+        {
+          "Id": "98df1f00-7af0-498b-b292-9717f05c819e",
+          "Name": "logo",
+          "Enabled": true,
+          "Position": "1786.575,-0.001064881,-0.0001064423",
+          "Rotation": "-0.0000000415189,0.0000000006098002,-0.707107,0.7071065",
+          "Scale": "5.398753,5.398753,5.398753",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/ui/logo.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "4f9ab128-10e1-42f4-91ec-7122b047b4dc",
+          "Name": "Scene Menu",
+          "Enabled": true,
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": ""
+        },
+        {
+          "Id": "ff6e1e9e-158c-4c99-86eb-6d8e94b9f4a7",
+          "Name": "Directional Light",
+          "Enabled": true,
+          "Position": "0,0,0",
+          "Rotation": "0.4351622,0.4351622,-0.5573454,0.5573453",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "DirectionalLightComponent",
+              "__enabled": true,
+              "LightColor": "0.86634,0.67823,0.31308,1",
+              "Shadows": true,
+              "SkyColor": "0.92079,0.45803,0.06382,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "825993a1-c759-4d5a-bc22-b44f3be66515",
+      "Name": "SkyBox",
+      "Enabled": true,
+      "Position": "325.7651,-0.000005274106,0",
+      "Rotation": "-0.00000002340994,0.0000000000000001895024,-0.000000008094955,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "SkyBox2D",
+          "__enabled": true,
+          "SkyMaterial": "materials/toasty/looming_sky.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "90d20b55-3e46-46e2-8cce-9c581b6b8665",
+      "Name": "Object",
+      "Enabled": true,
+      "Position": "2007.243,251.8548,-156.3238",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "VolumetricFogVolume",
+          "__enabled": true,
+          "Bounds": {
+            "Mins": "-1500,-1500,-1500",
+            "Maxs": "1500,1500,1500"
+          },
+          "FalloffExponent": 1,
+          "Strength": 2
+        }
+      ]
+    },
+    {
+      "Id": "9866acea-4a6e-4997-9a3a-34982c31a975",
+      "Name": "Point Light",
+      "Enabled": true,
+      "Position": "1933.547,541.2567,-19.39837",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "PointLightComponent",
+          "__enabled": true,
+          "LightColor": "1,0,0,1",
+          "Radius": 400
+        }
+      ]
+    },
+    {
+      "Id": "4e33354e-319d-4958-b07d-7fe25b01bb68",
+      "Name": "Cube",
+      "Enabled": true,
+      "Position": "3443.835,21.04352,-2656.087",
+      "Rotation": "0,0,0,1",
+      "Scale": "80.57302,80.57302,80.57302",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ModelComponent",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "0.0297,0.00676,0.00029,1"
+        }
+      ]
+    },
+    {
+      "Id": "6535a9e6-3b4b-4a58-921a-f31daba0a120",
+      "Name": "Object",
+      "Enabled": true,
+      "Position": "1267.716,-44.36872,-257.765",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ParticleSystem",
+          "__enabled": true,
+          "Looped": false,
+          "Particles": "particles/firebomb_flames.vpcf",
+          "PlaybackSpeed": 1
+        }
+      ]
+    }
+  ],
+  "__references": [
+    "crystalsilence.loomingsky",
+    "thieves.terrortown"
+  ]
+}
