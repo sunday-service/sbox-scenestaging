@@ -517,9 +517,9 @@
                                               "Children": [
                                                 {
                                                   "Id": "f1dfe9ce-d4ba-419b-96a9-a9adfd44fc03",
-                                                  "Name": "banana",
+                                                  "Name": "Wooden Wand",
                                                   "Enabled": true,
-                                                  "Position": "-1.492543,-0.9186349,-0.04158694",
+                                                  "Position": "0.6525071,-1.607341,-3.772413",
                                                   "Rotation": "0.178927,-0.1999243,-0.8311271,0.4870774",
                                                   "Scale": "1.00002,1.00002,1.00002",
                                                   "Tags": "",
@@ -529,7 +529,7 @@
                                                       "__enabled": true,
                                                       "BodyGroups": 18446744073709551615,
                                                       "MaterialOverride": null,
-                                                      "Model": "models/fantasy/items/dagger.vmdl",
+                                                      "Model": "models/weapons/wands/woodenwand/woodenwand.vmdl",
                                                       "ShouldCastShadows": true,
                                                       "Tint": "1,1,1,1"
                                                     }
@@ -1350,7 +1350,5 @@
       ]
     }
   ],
-  "__references": [
-    "degg.f_wep_dagger"
-  ]
+  "__references": []
 }
