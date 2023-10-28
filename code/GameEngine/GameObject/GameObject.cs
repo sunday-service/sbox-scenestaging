@@ -37,7 +37,7 @@ public partial class GameObject
 		}
 	}
 
-	internal GameObject( bool enabled, string name )
+	public GameObject( bool enabled, string name )
 	{
 		Transform = new GameTransform( this );
 		Tags = new GameTags( this );
@@ -45,6 +45,24 @@ public partial class GameObject
 		Scene = this as Scene ?? GameManager.ActiveScene;
 		Id = Guid.NewGuid();
 		Name = name;
+
+		if ( this is Scene scene )
+		{
+			Scene = scene;
+		}
+		else
+		{
+			Scene = GameManager.ActiveScene;
+			Parent = GameManager.ActiveScene;
+		}
+	}
+
+	public GameObject( bool enabled ) : this( enabled, "GameObject" )
+	{
+	}
+
+	public GameObject() : this( true, "GameObject" )
+	{
 	}
 
 	public override string ToString()
@@ -101,6 +119,9 @@ public partial class GameObject
 	{
 		for ( int i = Children.Count - 1; i >= 0; i-- )
 		{
+			if ( i >= Children.Count )
+				continue;
+
 			var c = Children[i];
 
 			if ( c is null )

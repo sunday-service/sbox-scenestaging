@@ -29,12 +29,13 @@ public static class SceneEditorMenus
 	public static void Cut()
 	{
 		var options = new GameObject.SerializeOptions();
-		var go = EditorScene.Selection.First() as GameObject;
+		var go = EditorScene.Selection.FirstOrDefault() as GameObject;
+		if ( go is null ) return;
+
 		var json = go.Serialize( options );
 
 		EditorUtility.Clipboard.Copy( json.ToString() );
 		go.Destroy();
-
 	}
 
 
@@ -42,7 +43,9 @@ public static class SceneEditorMenus
 	public static void Copy()
 	{
 		var options = new GameObject.SerializeOptions();
-		var go = EditorScene.Selection.First() as GameObject;
+		var go = EditorScene.Selection.FirstOrDefault() as GameObject;
+		if ( go is null ) return;
+
 		var json = go.Serialize( options );
 
 		EditorUtility.Clipboard.Copy( json.ToString() );
@@ -124,7 +127,7 @@ public static class SceneEditorMenus
 		var json = source.Serialize( options );
 		SceneUtility.MakeGameObjectsUnique( json );
 
-		var go = GameObject.Create();
+		var go = new GameObject();
 		go.Deserialize( json );
 		go.Transform.World = source.Transform.World;
 
