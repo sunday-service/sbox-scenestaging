@@ -9,8 +9,8 @@ public sealed class CitizenAnimation : BaseComponent, BaseComponent.ExecuteInEdi
 
 	[Property] public GameObject LookAtObject { get; set; }
 
-	
 
+	[Property, Range( 0.5f, 1.5f)] public float Height { get; set; } = 1.0f;
 
 	public override void Update()
 	{
@@ -21,6 +21,26 @@ public sealed class CitizenAnimation : BaseComponent, BaseComponent.ExecuteInEdi
 			var dir = (LookAtObject.Transform.Position - eyePos).Normal;
 			WithLook( dir, 1, 0.5f, 0.1f );
 		}
+
+		Target.Set( "scale_height", Height );
+
+		// SetIk( "left_hand", ... );
+		// SetIk( "right_hand", ... );
+	}
+
+	public void SetIk( string name, Transform tx )
+	{
+		// convert local to model
+		tx = Target.Transform.World.ToLocal( tx );
+
+		Target.Set( $"{name}_ik.enabled", true );
+		Target.Set( $"{name}_ik.position", tx.Position );
+		Target.Set( $"{name}_ik.rotation", tx.Rotation );
+	}
+
+	public void ClearIk( string name )
+	{
+		Target.Set( $"{name}_ik.enabled", false );
 	}
 
 	public Transform GetEyeWorldTransform
