@@ -4,8 +4,8 @@
       "Id": "7c163f9b-273d-41e8-91d6-9f096d02854b",
       "Name": "Camera",
       "Enabled": true,
-      "Position": "577.7551,0,0",
-      "Rotation": "0.000000003838792,0,0,1",
+      "Position": "695,0,0",
+      "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
       "Components": [
@@ -99,17 +99,17 @@
           "Id": "ff6e1e9e-158c-4c99-86eb-6d8e94b9f4a7",
           "Name": "Directional Light",
           "Enabled": true,
-          "Position": "0,0,0",
-          "Rotation": "0.4351622,0.4351622,-0.5573454,0.5573453",
+          "Position": "-159.2518,0.0001845732,500.6919",
+          "Rotation": "-0.0000001767547,-0.1085939,0.00000002001578,0.9940858",
           "Scale": "1,1,1",
           "Tags": "",
           "Components": [
             {
               "__type": "DirectionalLightComponent",
               "__enabled": true,
-              "LightColor": "0.86634,0.67823,0.31308,1",
+              "LightColor": "1,0,0,1",
               "Shadows": true,
-              "SkyColor": "0.92079,0.45803,0.06382,1"
+              "SkyColor": "0.78713,0.36208,0,1"
             }
           ]
         }
@@ -120,7 +120,7 @@
       "Name": "SkyBox",
       "Enabled": true,
       "Position": "325.7651,-0.000005274106,0",
-      "Rotation": "-0.00000002340994,0.0000000000000001895024,-0.000000008094955,1",
+      "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
       "Components": [
