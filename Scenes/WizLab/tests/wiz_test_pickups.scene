@@ -1402,6 +1402,57 @@
       ]
     },
     {
+      "Id": "527f239e-f69d-482a-904a-a02f35ccc6a6",
+      "Name": "Speed Rune Slate Pickup",
+      "Enabled": true,
+      "Position": "256,128,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "trigger",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": true,
+          "Scale": "50,50,96",
+          "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
+        }
+      ],
+      "Children": [
+        {
+          "Id": "39f99599-97c6-440c-90d6-d9dbaa7f42e2",
+          "Name": "Model",
+          "Enabled": true,
+          "Position": "0,0,32",
+          "Rotation": "0.0000006042966,0.9238794,0.0000006042966,0.3826836",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "models/materials/pickups/runeslate/speed/runeslate_speed.vmat",
+              "Model": "models/pickups/runeslate/runeslate.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.05,
+              "RotationSpeed": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
       "Id": "0be280b9-e221-41f5-9af8-aef5b4e70937",
       "Name": "Heal Flask Pickup",
       "Enabled": true,
