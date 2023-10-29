@@ -1,6 +1,6 @@
 using Sandbox;
 
-public sealed class SpinComponent : BaseComponent
+public sealed class BobComponent : BaseComponent
 {
 	[Property] public Angles SpinAngles { get; set; }
 
