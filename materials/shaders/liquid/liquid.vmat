@@ -1,0 +1,17 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/liquid/liquid.shader"
+
+	//---- Rendering ----
+	F_RENDER_BACKFACES 1
+
+	g_vFFoamColor "[0.811765 0.101961 0.101961 1.000000]"
+	g_vFillColorLower "[1.000000 0.082353 0.000000 0.000000]"
+	g_vFillColorUpper "[0.709804 0.027451 0.027451 0.000000]"
+
+	//---- Material ----
+	TextureColor "materials/default/default_color.tga"
+	TextureTranslucency "materials/default/default_trans.tga"
+}

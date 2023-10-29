@@ -1372,7 +1372,7 @@
           "Id": "20857722-3e4c-4b23-927d-4f7e0c5092d7",
           "Name": "Model",
           "Enabled": true,
-          "Position": "0,0,22.5552",
+          "Position": "0,0,32",
           "Rotation": "0,-0.3826848,0,0.923879",
           "Scale": "1,1,1",
           "Tags": "trigger",
@@ -1385,6 +1385,59 @@
               "Model": "models/pickups/books/spellbook/spellbook.vmdl",
               "ShouldCastShadows": true,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.1,
+              "RotationSpeed": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "0be280b9-e221-41f5-9af8-aef5b4e70937",
+      "Name": "Heal Flask Pickup",
+      "Enabled": true,
+      "Position": "256,-128,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "trigger",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": true,
+          "Scale": "50,50,96",
+          "Surface": null
+        }
+      ],
+      "Children": [
+        {
+          "Id": "6434121e-e694-4731-8b8d-8601d6a37f14",
+          "Name": "Model",
+          "Enabled": true,
+          "Position": "0,0,32",
+          "Rotation": "0.1305262,0,0,0.9914448",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/pickups/flasks/flask.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "LiquidComponent",
+              "__enabled": true,
+              "MaxWobble": 0.005,
+              "WobbleX": 0,
+              "WobbleY": 0
             },
             {
               "__type": "BobSpinComponent",
