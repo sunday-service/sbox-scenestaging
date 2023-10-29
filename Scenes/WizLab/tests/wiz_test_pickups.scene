@@ -1365,6 +1365,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -1389,7 +1394,7 @@
             {
               "__type": "BobSpinComponent",
               "__enabled": true,
-              "Amplitude": 0.1,
+              "Amplitude": 0.05,
               "RotationSpeed": 32
             }
           ]
@@ -1411,6 +1416,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -1435,7 +1445,65 @@
             {
               "__type": "BobSpinComponent",
               "__enabled": true,
-              "Amplitude": 0.1,
+              "Amplitude": 0.05,
+              "RotationSpeed": 32
+            },
+            {
+              "__type": "LiquidComponent",
+              "__enabled": true,
+              "MaxWobble": 0.005,
+              "WobbleX": 0,
+              "WobbleY": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "21d2d63d-7f13-4128-95ba-f432dc526814",
+      "Name": "Wooden Wand Weapon Pickup",
+      "Enabled": true,
+      "Position": "256,-256,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "trigger",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": true,
+          "Scale": "50,50,96",
+          "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
+        }
+      ],
+      "Children": [
+        {
+          "Id": "a071ac00-120f-4def-8314-16324bc0d279",
+          "Name": "Model",
+          "Enabled": true,
+          "Position": "0,0,32",
+          "Rotation": "0.1305262,0,0,0.9914448",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/weapons/wands/woodenwand/woodenwand.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.05,
               "RotationSpeed": 32
             },
             {
