@@ -108,9 +108,9 @@ PS
     #include "common/pixel.hlsl"
 
 	float g_flFillLevel <UiType( Slider); Range(-1.0, 1.0); Default(0.75);>;
-	float3 g_vFillColorUpper < UiType( Color ); Default3(0, 0.5, 0.5); >;
-	float3 g_vFillColorLower < UiType( Color ); Default3(0, 0, 1); >;
-	float3 g_vFFoamColor < UiType( Color ); Default3(0, 0.6, 0.7); >;
+	float3 g_vFillColorUpper < Attribute("FillColorUpper");  Default3(0, 0.5, 0.5); >;
+	float3 g_vFillColorLower < Attribute("FillColorLower");  Default3(0, 0, 1); >;
+	float3 g_vFFoamColor <Attribute("FillColorFoam"); Default3(0, 0.6, 0.7); >;
 
 	float4 MainPs( PixelInput i, bool isFrontFace : SV_IsFrontFace ) : SV_Target0
 	{

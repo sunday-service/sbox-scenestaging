@@ -1418,7 +1418,7 @@
           "Id": "6434121e-e694-4731-8b8d-8601d6a37f14",
           "Name": "Model",
           "Enabled": true,
-          "Position": "0,0,32",
+          "Position": "0,0,36.02988",
           "Rotation": "0.1305262,0,0,0.9914448",
           "Scale": "1,1,1",
           "Tags": "trigger",
@@ -1433,17 +1433,17 @@
               "Tint": "1,1,1,1"
             },
             {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.1,
+              "RotationSpeed": 32
+            },
+            {
               "__type": "LiquidComponent",
               "__enabled": true,
               "MaxWobble": 0.005,
               "WobbleX": 0,
               "WobbleY": 0
-            },
-            {
-              "__type": "BobSpinComponent",
-              "__enabled": true,
-              "Amplitude": 0.1,
-              "RotationSpeed": 32
             }
           ]
         }
