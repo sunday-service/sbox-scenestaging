@@ -31,7 +31,7 @@
 						[
 							{
 								from = "runeslate.vmat"
-								to = "models/materials/pickups/runeslate/runeslate_default.vmat"
+								to = "materials/models/pickups/runeslate/runeslate_default.vmat"
 							},
 						]
 						use_global_default = false
@@ -44,7 +44,7 @@
 						[
 							{
 								from = "models/materials/pickups/runeslate/runeslate_default.vmat"
-								to = "models/materials/pickups/runeslate/protection/runeslate_protection.vmat"
+								to = "materials/models/pickups/runeslate/protection/runeslate_protection.vmat"
 							},
 						]
 					},

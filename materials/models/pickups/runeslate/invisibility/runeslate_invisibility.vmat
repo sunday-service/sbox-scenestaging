@@ -11,12 +11,12 @@ Layer0
 	//---- Ambient Occlusion ----
 	g_flAmbientOcclusionDirectDiffuse "0.000"
 	g_flAmbientOcclusionDirectSpecular "0.000"
-	TextureAmbientOcclusion "models/materials/pickups/runeslate/invisibility/runeslate_invisibility_ao.png"
+	TextureAmbientOcclusion "materials/models/pickups/runeslate/invisibility/runeslate_invisibility_ao.png"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "models/materials/pickups/runeslate/invisibility/runeslate_invisibility_color.png"
+	TextureColor "materials/models/pickups/runeslate/invisibility/runeslate_invisibility_color.png"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -28,11 +28,11 @@ Layer0
 	g_flMetalness "0.000"
 
 	//---- Normal ----
-	TextureNormal "models/materials/pickups/runeslate/invisibility/runeslate_invisibility_normal.png"
+	TextureNormal "materials/models/pickups/runeslate/invisibility/runeslate_invisibility_normal.png"
 
 	//---- Roughness ----
 	g_flRoughnessScaleFactor "1.000"
-	TextureRoughness "models/materials/pickups/runeslate/invisibility/runeslate_invisibility_rough.png"
+	TextureRoughness "materials/models/pickups/runeslate/invisibility/runeslate_invisibility_rough.png"
 
 	//---- Self Illum ----
 	g_flSelfIllumAlbedoFactor "1.000"
@@ -40,7 +40,7 @@ Layer0
 	g_flSelfIllumScale "1.000"
 	g_vSelfIllumScrollSpeed "[0.000 0.000]"
 	g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureSelfIllumMask "models/materials/pickups/runeslate/invisibility/runeslate_invisibility_selfillum.png"
+	TextureSelfIllumMask "materials/models/pickups/runeslate/invisibility/runeslate_invisibility_selfillum.png"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"

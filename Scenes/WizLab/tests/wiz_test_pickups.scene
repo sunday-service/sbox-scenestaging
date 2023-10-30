@@ -1198,8 +1198,7 @@
                   "__type": "IkReachOut",
                   "__enabled": true,
                   "HandRotation": "-90,0,0",
-                  "Radius": 30,
-                  "TargetGameObject": "bd80578f-5261-4195-98e7-7ecf034778d8"
+                  "Radius": 30
                 }
               ],
               "Children": [
@@ -1256,8 +1255,7 @@
                   "__type": "IkReachOut",
                   "__enabled": true,
                   "HandRotation": "-90,180,0",
-                  "Radius": 30,
-                  "TargetGameObject": "8d388981-e17c-44bd-bf1c-7ee484a508b6"
+                  "Radius": 30
                 }
               ],
               "Children": [
@@ -1285,8 +1283,7 @@
                   "__type": "IkReachOut",
                   "__enabled": true,
                   "HandRotation": "-90,180,0",
-                  "Radius": 30,
-                  "TargetGameObject": "5f9913bd-f6ab-47e7-b412-8c64cddaf4d9"
+                  "Radius": 30
                 }
               ],
               "Children": [
@@ -1343,8 +1340,7 @@
                   "__type": "IkReachOut",
                   "__enabled": true,
                   "HandRotation": "-90,180,0",
-                  "Radius": 30,
-                  "TargetGameObject": "f48deb42-5e2a-4436-bb38-ad93ba0ec6df"
+                  "Radius": 30
                 }
               ],
               "Children": [
@@ -1654,57 +1650,6 @@
       ]
     },
     {
-      "Id": "527f239e-f69d-482a-904a-a02f35ccc6a6",
-      "Name": "Speed Rune Slate Pickup",
-      "Enabled": true,
-      "Position": "256,128,0",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "trigger",
-      "Components": [
-        {
-          "__type": "ColliderBoxComponent",
-          "__enabled": true,
-          "IsTrigger": true,
-          "Scale": "50,50,96",
-          "Surface": null
-        },
-        {
-          "__type": "PickupTrigger",
-          "__enabled": true,
-          "RespawnTime": 5
-        }
-      ],
-      "Children": [
-        {
-          "Id": "39f99599-97c6-440c-90d6-d9dbaa7f42e2",
-          "Name": "Model",
-          "Enabled": true,
-          "Position": "0,0,32",
-          "Rotation": "0.0000006042966,0.9238794,0.0000006042966,0.3826836",
-          "Scale": "1,1,1",
-          "Tags": "trigger",
-          "Components": [
-            {
-              "__type": "ModelComponent",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "models/materials/pickups/runeslate/speed/runeslate_speed.vmat",
-              "Model": "models/pickups/runeslate/runeslate.vmdl",
-              "ShouldCastShadows": true,
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BobSpinComponent",
-              "__enabled": true,
-              "Amplitude": 0.05,
-              "RotationSpeed": 32
-            }
-          ]
-        }
-      ]
-    },
-    {
       "Id": "0be280b9-e221-41f5-9af8-aef5b4e70937",
       "Name": "Heal Flask Pickup",
       "Enabled": true,
@@ -1807,29 +1752,421 @@
       ]
     },
     {
-      "Id": "351993a4-f71e-4e39-8ea3-971ac64137da",
-      "Name": "Sphere",
+      "Id": "6c50c085-8bd6-4a41-a502-b78793f9512d",
+      "Name": "Fire Bolt Staff Weapon Pickup",
       "Enabled": true,
-      "Position": "0,0,-1605.119",
+      "Position": "128,-256,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "trigger",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": true,
+          "Scale": "50,50,96",
+          "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
+        }
+      ],
+      "Children": [
+        {
+          "Id": "a03a0571-f2be-46bf-b44e-72e34d9c727c",
+          "Name": "Model",
+          "Enabled": true,
+          "Position": "0,0,32",
+          "Rotation": "0.1305262,0,0,0.9914448",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/weapons/staffs/fireboltstaff/w_fireboltstaff.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.05,
+              "RotationSpeed": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "c8fa6d5c-4049-4c0a-ad29-7a7379364839",
+      "Name": "Ice Bolt Staff Weapon Pickup",
+      "Enabled": true,
+      "Position": "0,-256,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "trigger",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": true,
+          "Scale": "50,50,96",
+          "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
+        }
+      ],
+      "Children": [
+        {
+          "Id": "5d3944d9-9948-4795-9294-02a12c3c1139",
+          "Name": "Model",
+          "Enabled": true,
+          "Position": "0,0,32",
+          "Rotation": "0.1305262,0,0,0.9914448",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/weapons/staffs/iceboltstaff/w_iceboltstaff.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.05,
+              "RotationSpeed": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "0122d230-c690-4df6-b890-2506b4e54250",
+      "Name": "Rune Pickups",
+      "Enabled": true,
+      "Position": "0,128,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
-      "Components": [
+      "Children": [
         {
-          "__type": "ModelComponent",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/dev/dev_metal_rough20.vmat",
-          "Model": "models/dev/sphere.vmdl",
-          "ShouldCastShadows": true,
-          "Tint": "1,1,1,1"
+          "Id": "527f239e-f69d-482a-904a-a02f35ccc6a6",
+          "Name": "Rune Slate Pickup",
+          "Enabled": true,
+          "Position": "256,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ColliderBoxComponent",
+              "__enabled": true,
+              "IsTrigger": true,
+              "Scale": "50,50,96",
+              "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
+            }
+          ],
+          "Children": [
+            {
+              "Id": "39f99599-97c6-440c-90d6-d9dbaa7f42e2",
+              "Name": "Model",
+              "Enabled": true,
+              "Position": "0,0,32",
+              "Rotation": "0.0000006042966,0.9238794,0.0000006042966,0.3826836",
+              "Scale": "1,1,1",
+              "Tags": "trigger",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": null,
+                  "Model": "models/pickups/runeslate/runeslate.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BobSpinComponent",
+                  "__enabled": true,
+                  "Amplitude": 0.05,
+                  "RotationSpeed": 32
+                }
+              ]
+            }
+          ]
         },
         {
-          "__type": "ColliderSphereComponent",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Radius": 32.79981,
-          "Surface": null
+          "Id": "584a9450-b948-4026-b357-8653a35d4ef5",
+          "Name": "Speed Rune Slate Pickup",
+          "Enabled": true,
+          "Position": "128,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ColliderBoxComponent",
+              "__enabled": true,
+              "IsTrigger": true,
+              "Scale": "50,50,96",
+              "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
+            }
+          ],
+          "Children": [
+            {
+              "Id": "4c671744-a693-4fe4-8ea2-b5e657391d4e",
+              "Name": "Model",
+              "Enabled": true,
+              "Position": "0,0,32",
+              "Rotation": "0.0000006042966,0.9238794,0.0000006042966,0.3826836",
+              "Scale": "1,1,1",
+              "Tags": "trigger",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/models/pickups/runeslate/speed/runeslate_speed.vmat",
+                  "Model": "models/pickups/runeslate/runeslate.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BobSpinComponent",
+                  "__enabled": true,
+                  "Amplitude": 0.05,
+                  "RotationSpeed": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "5e2afec7-1e34-468b-b436-7622f75e9777",
+          "Name": "Levitation Rune Slate Pickup",
+          "Enabled": true,
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ColliderBoxComponent",
+              "__enabled": true,
+              "IsTrigger": true,
+              "Scale": "50,50,96",
+              "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
+            }
+          ],
+          "Children": [
+            {
+              "Id": "e361b95d-9f2b-4313-9411-f56aba340aa5",
+              "Name": "Model",
+              "Enabled": true,
+              "Position": "0,0,32",
+              "Rotation": "0.0000006042966,0.9238794,0.0000006042966,0.3826836",
+              "Scale": "1,1,1",
+              "Tags": "trigger",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/models/pickups/runeslate/levitation/runeslate_levitation.vmat",
+                  "Model": "models/pickups/runeslate/runeslate.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BobSpinComponent",
+                  "__enabled": true,
+                  "Amplitude": 0.05,
+                  "RotationSpeed": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "b20ce684-4298-4392-b5c8-b3dd01a1b675",
+          "Name": "Protection Rune Slate Pickup",
+          "Enabled": true,
+          "Position": "-128,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ColliderBoxComponent",
+              "__enabled": true,
+              "IsTrigger": true,
+              "Scale": "50,50,96",
+              "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
+            }
+          ],
+          "Children": [
+            {
+              "Id": "bcf65bbd-9a58-4b0d-83e1-a6f064db1fe3",
+              "Name": "Model",
+              "Enabled": true,
+              "Position": "0,0,32",
+              "Rotation": "0.0000006042966,0.9238794,0.0000006042966,0.3826836",
+              "Scale": "1,1,1",
+              "Tags": "trigger",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/models/pickups/runeslate/protection/runeslate_protection.vmat",
+                  "Model": "models/pickups/runeslate/runeslate.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BobSpinComponent",
+                  "__enabled": true,
+                  "Amplitude": 0.05,
+                  "RotationSpeed": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "ea3a92ab-ca50-43a4-9afd-084b5680762e",
+          "Name": "Invisibility Rune Slate Pickup",
+          "Enabled": true,
+          "Position": "-256,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ColliderBoxComponent",
+              "__enabled": true,
+              "IsTrigger": true,
+              "Scale": "50,50,96",
+              "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
+            }
+          ],
+          "Children": [
+            {
+              "Id": "1c9bedac-d1a1-4b06-b9dd-6eee7c285eb3",
+              "Name": "Model",
+              "Enabled": true,
+              "Position": "0,0,32",
+              "Rotation": "0.0000006042966,0.9238794,0.0000006042966,0.3826836",
+              "Scale": "1,1,1",
+              "Tags": "trigger",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/models/pickups/runeslate/invisibility/runeslate_invisibility.vmat",
+                  "Model": "models/pickups/runeslate/runeslate.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BobSpinComponent",
+                  "__enabled": true,
+                  "Amplitude": 0.05,
+                  "RotationSpeed": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "eb05d361-2db2-4d8a-acff-8341d815cf6b",
+          "Name": "Quad Damage Rune Slate Pickup",
+          "Enabled": true,
+          "Position": "-384,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ColliderBoxComponent",
+              "__enabled": true,
+              "IsTrigger": true,
+              "Scale": "50,50,96",
+              "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
+            }
+          ],
+          "Children": [
+            {
+              "Id": "0524f1a4-efd8-4b9c-bf7c-a34185c61877",
+              "Name": "Model",
+              "Enabled": true,
+              "Position": "0,0,32",
+              "Rotation": "0.0000006042966,0.9238794,0.0000006042966,0.3826836",
+              "Scale": "1,1,1",
+              "Tags": "trigger",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/models/pickups/runeslate/quaddamage/runeslate_quaddamage.vmat",
+                  "Model": "models/pickups/runeslate/runeslate.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BobSpinComponent",
+                  "__enabled": true,
+                  "Amplitude": 0.05,
+                  "RotationSpeed": 32
+                }
+              ]
+            }
+          ]
         }
       ]
     }
