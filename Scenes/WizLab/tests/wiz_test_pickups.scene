@@ -33,8 +33,8 @@
           "__type": "CitizenAnimation",
           "__enabled": true,
           "Height": 1,
-          "IkLeftHand": "b1d86433-a199-4d24-8afc-39cc54246c8f",
-          "IkRightHand": "6f3a4625-1ad7-4a3a-aafb-fdb8f76a2c84",
+          "IkLeftHand": "7595d370-573b-4efc-a84f-bc7667e85b4a",
+          "IkRightHand": "0df305c6-e53c-4535-adf5-fd93d560e88c",
           "Target": "b5b3f723-512c-4db8-a7d4-d8303d52ef49"
         }
       ],
@@ -238,7 +238,7 @@
                                               "Children": [
                                                 {
                                                   "Id": "309cce93-d62e-48d4-815e-35b8bce7cf2e",
-                                                  "Name": "Test Orb",
+                                                  "Name": "Test Orb Liquid",
                                                   "Enabled": true,
                                                   "Position": "0.3999999,-2.2,0",
                                                   "Rotation": "0,0,0,1",
@@ -550,7 +550,7 @@
                                                 {
                                                   "Id": "f1dfe9ce-d4ba-419b-96a9-a9adfd44fc03",
                                                   "Name": "Fire Bolt Staff",
-                                                  "Enabled": true,
+                                                  "Enabled": false,
                                                   "Position": "10.02121,-4.205384,-17.59233",
                                                   "Rotation": "0.178927,-0.1999243,-0.8311271,0.4870774",
                                                   "Scale": "0.7,0.7,0.7",
@@ -564,6 +564,53 @@
                                                       "Model": "models/weapons/staffs/fireboltstaff/w_fireboltstaff.vmdl",
                                                       "ShouldCastShadows": true,
                                                       "Tint": "1,1,1,1"
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "Id": "e44c3912-eba4-411a-bf62-2d3e99959de2",
+                                                  "Name": "Ice Bolt Staff",
+                                                  "Enabled": true,
+                                                  "Position": "10.02121,-4.205385,-17.59233",
+                                                  "Rotation": "0.178927,-0.1999243,-0.8311272,0.4870774",
+                                                  "Scale": "0.7,0.7,0.7",
+                                                  "Tags": "",
+                                                  "Components": [
+                                                    {
+                                                      "__type": "ModelComponent",
+                                                      "__enabled": true,
+                                                      "BodyGroups": 18446744073709551615,
+                                                      "MaterialOverride": null,
+                                                      "Model": "models/weapons/staffs/iceboltstaff/w_iceboltstaff.vmdl",
+                                                      "ShouldCastShadows": true,
+                                                      "Tint": "1,1,1,1"
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "Id": "7a7e57f7-49d1-4d43-9e1b-70516c7ae9e7",
+                                                  "Name": "Test Orb Liquid",
+                                                  "Enabled": false,
+                                                  "Position": "1.458642,2.40941,-0.2882701",
+                                                  "Rotation": "-0.000001057983,-0.7071074,0.000001817942,0.7071063",
+                                                  "Scale": "1,1,1",
+                                                  "Tags": "",
+                                                  "Components": [
+                                                    {
+                                                      "__type": "ModelComponent",
+                                                      "__enabled": true,
+                                                      "BodyGroups": 18446744073709551615,
+                                                      "MaterialOverride": null,
+                                                      "Model": "models/dev/test_orb/test_orb_weapon/test_orb_weapon_liquid.vmdl",
+                                                      "ShouldCastShadows": true,
+                                                      "Tint": "1,1,1,1"
+                                                    },
+                                                    {
+                                                      "__type": "LiquidComponent",
+                                                      "__enabled": true,
+                                                      "MaxWobble": 0.0025,
+                                                      "WobbleX": 0,
+                                                      "WobbleY": 0
                                                     }
                                                   ]
                                                 }
@@ -1141,7 +1188,7 @@
             {
               "Id": "b1d86433-a199-4d24-8afc-39cc54246c8f",
               "Name": "Ik Reach - Left Hand",
-              "Enabled": true,
+              "Enabled": false,
               "Position": "6.933312,14.42769,37.24313",
               "Rotation": "0.009440792,-0.04258559,0.2162285,0.9753679",
               "Scale": "1,1,1",
@@ -1158,6 +1205,35 @@
               "Children": [
                 {
                   "Id": "bd80578f-5261-4195-98e7-7ecf034778d8",
+                  "Name": "Left Hand",
+                  "Enabled": false,
+                  "Position": "40.56198,-0.00002474058,0.00000000000006350476",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": ""
+                }
+              ]
+            },
+            {
+              "Id": "7595d370-573b-4efc-a84f-bc7667e85b4a",
+              "Name": "Ik Reach - Left Hand - Test Orb",
+              "Enabled": true,
+              "Position": "6.933312,14.42769,37.24313",
+              "Rotation": "0.009440792,-0.04258559,0.2162285,0.9753679",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "IkReachOut",
+                  "__enabled": true,
+                  "HandRotation": "-90,0,0",
+                  "Radius": 30,
+                  "TargetGameObject": "ae9ee675-e42d-4029-bf57-1c46ed930ff1"
+                }
+              ],
+              "Children": [
+                {
+                  "Id": "ae9ee675-e42d-4029-bf57-1c46ed930ff1",
                   "Name": "Left Hand",
                   "Enabled": false,
                   "Position": "40.56198,-0.00002474058,0.00000000000006350476",
@@ -1199,7 +1275,7 @@
             {
               "Id": "6f3a4625-1ad7-4a3a-aafb-fdb8f76a2c84",
               "Name": "Ik Reach - Right Hand - Fire Bolt Staff",
-              "Enabled": true,
+              "Enabled": false,
               "Position": "11,-14,39.13332",
               "Rotation": "0.5669688,0.007770061,-0.1298485,0.8134036",
               "Scale": "1,1,1",
@@ -1216,6 +1292,64 @@
               "Children": [
                 {
                   "Id": "5f9913bd-f6ab-47e7-b412-8c64cddaf4d9",
+                  "Name": "Right Hand",
+                  "Enabled": false,
+                  "Position": "0,0,0",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": ""
+                }
+              ]
+            },
+            {
+              "Id": "0df305c6-e53c-4535-adf5-fd93d560e88c",
+              "Name": "Ik Reach - Right Hand - Ice Bolt Staff",
+              "Enabled": true,
+              "Position": "11,-14,39.13332",
+              "Rotation": "0.5669688,0.007770061,-0.1298485,0.8134036",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "IkReachOut",
+                  "__enabled": true,
+                  "HandRotation": "-90,180,0",
+                  "Radius": 30,
+                  "TargetGameObject": "7800d275-6005-4e84-b6a8-59c211ec280e"
+                }
+              ],
+              "Children": [
+                {
+                  "Id": "7800d275-6005-4e84-b6a8-59c211ec280e",
+                  "Name": "Right Hand",
+                  "Enabled": false,
+                  "Position": "0,0,0",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": ""
+                }
+              ]
+            },
+            {
+              "Id": "dd88d6ed-c783-4575-8c73-c6e47a05f59e",
+              "Name": "Ik Reach - Right Hand - Test Orb",
+              "Enabled": false,
+              "Position": "5.399986,-12.73334,39.13332",
+              "Rotation": "0.9450745,-0.1542469,-0.1069289,0.267597",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "IkReachOut",
+                  "__enabled": true,
+                  "HandRotation": "-90,180,0",
+                  "Radius": 30,
+                  "TargetGameObject": "f48deb42-5e2a-4436-bb38-ad93ba0ec6df"
+                }
+              ],
+              "Children": [
+                {
+                  "Id": "f48deb42-5e2a-4436-bb38-ad93ba0ec6df",
                   "Name": "Right Hand",
                   "Enabled": false,
                   "Position": "0,0,0",
