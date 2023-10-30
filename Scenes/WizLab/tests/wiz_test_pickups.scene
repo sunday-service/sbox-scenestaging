@@ -240,7 +240,7 @@
                                                   "Id": "309cce93-d62e-48d4-815e-35b8bce7cf2e",
                                                   "Name": "Test Orb",
                                                   "Enabled": true,
-                                                  "Position": "0,0,0",
+                                                  "Position": "0.3999999,-2.2,0",
                                                   "Rotation": "0,0,0,1",
                                                   "Scale": "1,1,1",
                                                   "Tags": "",
@@ -250,9 +250,16 @@
                                                       "__enabled": true,
                                                       "BodyGroups": 18446744073709551615,
                                                       "MaterialOverride": null,
-                                                      "Model": "models/dev/test_orb/test_orb_weapon/test_orb_weapon.vmdl",
+                                                      "Model": "models/dev/test_orb/test_orb_weapon/test_orb_weapon_liquid.vmdl",
                                                       "ShouldCastShadows": true,
                                                       "Tint": "1,1,1,1"
+                                                    },
+                                                    {
+                                                      "__type": "LiquidComponent",
+                                                      "__enabled": true,
+                                                      "MaxWobble": 0.0025,
+                                                      "WobbleX": 0,
+                                                      "WobbleY": 0
                                                     }
                                                   ]
                                                 }
