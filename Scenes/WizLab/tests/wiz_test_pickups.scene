@@ -34,7 +34,7 @@
           "__enabled": true,
           "Height": 1,
           "IkLeftHand": "b1d86433-a199-4d24-8afc-39cc54246c8f",
-          "IkRightHand": "47105704-b4ce-4ca0-b4b8-524bb2dd4fbe",
+          "IkRightHand": "6f3a4625-1ad7-4a3a-aafb-fdb8f76a2c84",
           "Target": "b5b3f723-512c-4db8-a7d4-d8303d52ef49"
         }
       ],
@@ -549,11 +549,11 @@
                                               "Children": [
                                                 {
                                                   "Id": "f1dfe9ce-d4ba-419b-96a9-a9adfd44fc03",
-                                                  "Name": "Wooden Wand",
+                                                  "Name": "Fire Bolt Staff",
                                                   "Enabled": true,
-                                                  "Position": "1.108688,-1.343864,-2.091049",
+                                                  "Position": "10.02121,-4.205384,-17.59233",
                                                   "Rotation": "0.178927,-0.1999243,-0.8311271,0.4870774",
-                                                  "Scale": "1.00002,1.00002,1.00002",
+                                                  "Scale": "0.7,0.7,0.7",
                                                   "Tags": "",
                                                   "Components": [
                                                     {
@@ -561,7 +561,7 @@
                                                       "__enabled": true,
                                                       "BodyGroups": 18446744073709551615,
                                                       "MaterialOverride": null,
-                                                      "Model": "models/weapons/wands/woodenwand/woodenwand.vmdl",
+                                                      "Model": "models/weapons/staffs/fireboltstaff/w_fireboltstaff.vmdl",
                                                       "ShouldCastShadows": true,
                                                       "Tint": "1,1,1,1"
                                                     }
@@ -1169,8 +1169,8 @@
             },
             {
               "Id": "47105704-b4ce-4ca0-b4b8-524bb2dd4fbe",
-              "Name": "Ik Reach - Right Hand",
-              "Enabled": true,
+              "Name": "Ik Reach - Right Hand - Wooden Wand",
+              "Enabled": false,
               "Position": "13,-14,50",
               "Rotation": "0.5551778,-0.1985114,0.1234613,0.7982031",
               "Scale": "1,1,1",
@@ -1187,6 +1187,35 @@
               "Children": [
                 {
                   "Id": "8d388981-e17c-44bd-bf1c-7ee484a508b6",
+                  "Name": "Right Hand",
+                  "Enabled": false,
+                  "Position": "0,0,0",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": ""
+                }
+              ]
+            },
+            {
+              "Id": "6f3a4625-1ad7-4a3a-aafb-fdb8f76a2c84",
+              "Name": "Ik Reach - Right Hand - Fire Bolt Staff",
+              "Enabled": true,
+              "Position": "11,-14,39.13332",
+              "Rotation": "0.5669688,0.007770061,-0.1298485,0.8134036",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "IkReachOut",
+                  "__enabled": true,
+                  "HandRotation": "-90,180,0",
+                  "Radius": 30,
+                  "TargetGameObject": "5f9913bd-f6ab-47e7-b412-8c64cddaf4d9"
+                }
+              ],
+              "Children": [
+                {
+                  "Id": "5f9913bd-f6ab-47e7-b412-8c64cddaf4d9",
                   "Name": "Right Hand",
                   "Enabled": false,
                   "Position": "0,0,0",
