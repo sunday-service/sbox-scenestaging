@@ -33,6 +33,8 @@
           "__type": "CitizenAnimation",
           "__enabled": true,
           "Height": 1,
+          "IkLeftHand": "b1d86433-a199-4d24-8afc-39cc54246c8f",
+          "IkRightHand": "47105704-b4ce-4ca0-b4b8-524bb2dd4fbe",
           "Target": "b5b3f723-512c-4db8-a7d4-d8303d52ef49"
         }
       ],
@@ -1106,6 +1108,64 @@
                   "Tags": ""
                 }
               ]
+            },
+            {
+              "Id": "b1d86433-a199-4d24-8afc-39cc54246c8f",
+              "Name": "Ik Reach - Left Hand",
+              "Enabled": false,
+              "Position": "0.000003347504,10.16102,50.37645",
+              "Rotation": "0.03094213,-0.05795011,0.46999,0.8802238",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "IkReachOut",
+                  "__enabled": true,
+                  "HandRotation": "-90,0,0",
+                  "Radius": 30,
+                  "TargetGameObject": "bd80578f-5261-4195-98e7-7ecf034778d8"
+                }
+              ],
+              "Children": [
+                {
+                  "Id": "bd80578f-5261-4195-98e7-7ecf034778d8",
+                  "Name": "Left Hand",
+                  "Enabled": false,
+                  "Position": "40.56198,-0.00002474058,0.00000000000006350476",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": ""
+                }
+              ]
+            },
+            {
+              "Id": "47105704-b4ce-4ca0-b4b8-524bb2dd4fbe",
+              "Name": "Ik Reach - Right Hand",
+              "Enabled": true,
+              "Position": "13,-14,50",
+              "Rotation": "0.5551778,-0.1985114,0.1234613,0.7982031",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "IkReachOut",
+                  "__enabled": true,
+                  "HandRotation": "-90,180,0",
+                  "Radius": 30,
+                  "TargetGameObject": "8d388981-e17c-44bd-bf1c-7ee484a508b6"
+                }
+              ],
+              "Children": [
+                {
+                  "Id": "8d388981-e17c-44bd-bf1c-7ee484a508b6",
+                  "Name": "Right Hand",
+                  "Enabled": false,
+                  "Position": "0,0,0",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": ""
+                }
+              ]
             }
           ]
         },
@@ -1498,13 +1558,6 @@
               "__enabled": true,
               "Amplitude": 0.05,
               "RotationSpeed": 32
-            },
-            {
-              "__type": "LiquidComponent",
-              "__enabled": true,
-              "MaxWobble": 0.005,
-              "WobbleX": 0,
-              "WobbleY": 0
             }
           ]
         }
@@ -1556,15 +1609,35 @@
               "__enabled": true,
               "Amplitude": 0.05,
               "RotationSpeed": 32
-            },
-            {
-              "__type": "LiquidComponent",
-              "__enabled": true,
-              "MaxWobble": 0.005,
-              "WobbleX": 0,
-              "WobbleY": 0
             }
           ]
+        }
+      ]
+    },
+    {
+      "Id": "351993a4-f71e-4e39-8ea3-971ac64137da",
+      "Name": "Sphere",
+      "Enabled": true,
+      "Position": "0,0,-1605.119",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ModelComponent",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/dev/dev_metal_rough20.vmat",
+          "Model": "models/dev/sphere.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ColliderSphereComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Radius": 32.79981,
+          "Surface": null
         }
       ]
     }
