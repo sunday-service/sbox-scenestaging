@@ -53,7 +53,7 @@
           "Id": "6aaac9a1-c149-404b-ada2-dab7e6c628b2",
           "Name": "Point Light",
           "Enabled": true,
-          "Position": "1933.547,0,-19.39837",
+          "Position": "2070.052,0,-19.39837",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -94,24 +94,6 @@
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": ""
-        },
-        {
-          "Id": "ff6e1e9e-158c-4c99-86eb-6d8e94b9f4a7",
-          "Name": "Directional Light",
-          "Enabled": true,
-          "Position": "-159.2518,0.0001845732,500.6919",
-          "Rotation": "-0.0000001767547,-0.1085939,0.00000002001578,0.9940858",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Components": [
-            {
-              "__type": "DirectionalLightComponent",
-              "__enabled": true,
-              "LightColor": "1,0,0,1",
-              "Shadows": true,
-              "SkyColor": "0.78713,0.36208,0,1"
-            }
-          ]
         }
       ]
     },
@@ -157,7 +139,7 @@
       "Id": "9866acea-4a6e-4997-9a3a-34982c31a975",
       "Name": "Point Light",
       "Enabled": true,
-      "Position": "1933.547,541.2567,-19.39837",
+      "Position": "2074.811,-488.0915,-19.39837",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -167,6 +149,40 @@
           "__enabled": true,
           "LightColor": "1,0,0,1",
           "Radius": 400
+        }
+      ]
+    },
+    {
+      "Id": "405d9a37-fd27-491b-8d42-5ac62b5c5d4a",
+      "Name": "Point Light",
+      "Enabled": true,
+      "Position": "1916.335,619.1058,-19.39837",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "PointLightComponent",
+          "__enabled": true,
+          "LightColor": "1,0,0,1",
+          "Radius": 200
+        }
+      ]
+    },
+    {
+      "Id": "9d4c08cf-12a1-4868-9be8-2b91c9372824",
+      "Name": "Point Light",
+      "Enabled": true,
+      "Position": "2063.272,301.5779,-19.39837",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "PointLightComponent",
+          "__enabled": true,
+          "LightColor": "1,0,0,1",
+          "Radius": 600
         }
       ]
     },
@@ -205,6 +221,46 @@
           "Looped": false,
           "Particles": "particles/firebomb_flames.vpcf",
           "PlaybackSpeed": 1
+        }
+      ]
+    },
+    {
+      "Id": "171b15ca-f226-4955-ae6a-f9112769abee",
+      "Name": "Directional Light",
+      "Enabled": true,
+      "Position": "0.00010331,140.1252,560.5011",
+      "Rotation": "0.3209166,0.530632,-0.4383841,0.6505855",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "DirectionalLightComponent",
+          "__enabled": true,
+          "LightColor": "0.47525,0.11528,0.19448,1",
+          "Shadows": true,
+          "SkyColor": "0.72277,0.19322,0.19322,1"
+        }
+      ]
+    },
+    {
+      "Id": "fe764e9b-d480-4a5d-827f-9078e0de65aa",
+      "Name": "Object",
+      "Enabled": true,
+      "Position": "1758.542,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "EnvmapComponent",
+          "__enabled": true,
+          "Bounds": {
+            "Mins": "-1024,-1024,-1024",
+            "Maxs": "1024,1024,1024"
+          },
+          "Projection": "Sphere",
+          "Texture": "textures/cubemaps/default2.vtex",
+          "TintColor": "1,1,1,1"
         }
       ]
     }
