@@ -585,6 +585,34 @@
                                                       "ShouldCastShadows": true,
                                                       "Tint": "1,1,1,1"
                                                     }
+                                                  ],
+                                                  "Children": [
+                                                    {
+                                                      "Id": "611030ea-1f37-4644-a350-6f060a577cda",
+                                                      "Name": "Object",
+                                                      "Enabled": true,
+                                                      "Position": "0,0,0",
+                                                      "Rotation": "0,0,0,1",
+                                                      "Scale": "1,1,1",
+                                                      "Tags": ""
+                                                    },
+                                                    {
+                                                      "Id": "2fffb629-64f5-4352-ac58-0d6c5333442a",
+                                                      "Name": "Point Light",
+                                                      "Enabled": true,
+                                                      "Position": "0.00003388419,0.00008020549,65.81093",
+                                                      "Rotation": "0,0,0,1",
+                                                      "Scale": "1,1,1",
+                                                      "Tags": "",
+                                                      "Components": [
+                                                        {
+                                                          "__type": "PointLightComponent",
+                                                          "__enabled": true,
+                                                          "LightColor": "0.03451,0.49746,0.63366,1",
+                                                          "Radius": 64
+                                                        }
+                                                      ]
+                                                    }
                                                   ]
                                                 },
                                                 {
@@ -2167,6 +2195,48 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "Id": "8954149d-bfc4-4e15-b6c9-206936b1daf1",
+      "Name": "Cubemap",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "EnvmapComponent",
+          "__enabled": true,
+          "Bounds": {
+            "Mins": "-512,-512,-512",
+            "Maxs": "512,512,512"
+          },
+          "Projection": "Box",
+          "Texture": "textures/cubemaps/default2.vtex",
+          "TintColor": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "0cba742d-9a4a-4cc9-94b9-fbcd958ef17b",
+      "Name": "Object",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "CubemapFog",
+          "__enabled": true,
+          "Blur": 0.5,
+          "EndDistance": 4096,
+          "FalloffExponent": 1,
+          "Sky": "materials/skybox/light_test_sky_night_basic.vmat",
+          "StartDistance": 10
         }
       ]
     }
