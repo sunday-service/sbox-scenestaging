@@ -1,0 +1,49 @@
+{
+  "RootObject": {
+    "Id": "dcf4532f-261f-4c00-a3dd-a2f32a050374",
+    "Name": "lava_rock_projectile",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Components": [
+      {
+        "__type": "PhysicsComponent",
+        "__enabled": true,
+        "Gravity": true,
+        "Static": false
+      }
+    ],
+    "Children": [
+      {
+        "Id": "eee661ad-a95b-4985-82ce-ddd3756cec84",
+        "Name": "Model",
+        "Enabled": true,
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "ModelComponent",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": null,
+            "Model": "models/weapons/projectiles/lavarock.vmdl",
+            "ShouldCastShadows": true,
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "ColliderSphereComponent",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Radius": 3.4000058,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "__references": []
+}
