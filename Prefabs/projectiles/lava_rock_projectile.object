@@ -1,7 +1,7 @@
 {
   "RootObject": {
-    "Id": "1afa03ee-a6f9-406d-b312-5842008da3c4",
-    "Name": "lava_rock_projectile",
+    "Id": "a6fb8c57-b933-47a9-92c5-97db416544b8",
+    "Name": "Lava Rock Projectile",
     "Enabled": true,
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
@@ -13,11 +13,16 @@
         "__enabled": true,
         "Gravity": true,
         "Static": false
+      },
+      {
+        "__type": "SelfDestructComponent",
+        "__enabled": true,
+        "Seconds": 4
       }
     ],
     "Children": [
       {
-        "Id": "94d6a154-9e65-412f-9e47-813e7075afb8",
+        "Id": "e25190cd-00a8-49d6-93a7-ba0771bee3ff",
         "Name": "Model",
         "Enabled": true,
         "Position": "0,0,0",
@@ -44,7 +49,7 @@
         ]
       },
       {
-        "Id": "770738d2-8c8e-41dc-90f5-e9edc1a0ba37",
+        "Id": "6c4a6a0d-e033-4a61-8ff4-114681ea4ec6",
         "Name": "Model Particle",
         "Enabled": true,
         "Position": "0,0,0",

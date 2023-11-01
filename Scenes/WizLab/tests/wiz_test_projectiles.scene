@@ -1708,16 +1708,6 @@
           ]
         }
       ]
-    },
-    {
-      "Id": "ea2d5300-0381-4c18-8134-3afb10527149",
-      "Name": "lava_rock_projectile",
-      "Enabled": true,
-      "Position": "108.7794,121.742,36.50999",
-      "Rotation": "-0.4461713,-0.08529582,0.8750273,-0.1672814",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "__Prefab": "prefabs/projectiles/lava_rock_projectile.object"
     }
   ],
   "__references": []
