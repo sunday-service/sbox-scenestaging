@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "a6fb8c57-b933-47a9-92c5-97db416544b8",
+    "Id": "85aec5c7-a512-4393-9687-1c18bcb2ba4c",
     "Name": "frost_projectile",
     "Enabled": true,
     "Position": "0,0,0",
@@ -18,11 +18,23 @@
         "__type": "SelfDestructComponent",
         "__enabled": true,
         "Seconds": 4
+      },
+      {
+        "__type": "ProjectileImpact",
+        "__enabled": true,
+        "ImpactParticles": "prefabs/projectiles/impact/frost_projectile_impact.object"
+      },
+      {
+        "__type": "ColliderSphereComponent",
+        "__enabled": true,
+        "IsTrigger": false,
+        "Radius": 8,
+        "Surface": null
       }
     ],
     "Children": [
       {
-        "Id": "e25190cd-00a8-49d6-93a7-ba0771bee3ff",
+        "Id": "fb11f4ec-e5fc-4f6a-949f-ebca6cda2d5a",
         "Name": "Model",
         "Enabled": true,
         "Position": "0,0,0",
@@ -38,18 +50,11 @@
             "Model": "models/dev/sphere.vmdl",
             "ShouldCastShadows": true,
             "Tint": "1,1,1,1"
-          },
-          {
-            "__type": "ColliderSphereComponent",
-            "__enabled": true,
-            "IsTrigger": false,
-            "Radius": 3.4000058,
-            "Surface": null
           }
         ]
       },
       {
-        "Id": "6c4a6a0d-e033-4a61-8ff4-114681ea4ec6",
+        "Id": "a49f0a17-8f27-421c-acae-8385e8e41b92",
         "Name": "Model Particle",
         "Enabled": true,
         "Position": "0,0,0",

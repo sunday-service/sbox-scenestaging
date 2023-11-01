@@ -179,7 +179,7 @@
           "__enabled": true,
           "Muzzle": "c80e108b-55a4-4672-94a4-3e1d922a0834",
           "Projectile": "prefabs/projectiles/frost_projectile.object",
-          "ProjectileVelocityMultiplier": 256,
+          "ProjectileVelocityMultiplier": 512,
           "ShootInterval": 3
         }
       ],
@@ -237,7 +237,7 @@
               "Id": "c80e108b-55a4-4672-94a4-3e1d922a0834",
               "Name": "Muzzle",
               "Enabled": true,
-              "Position": "-0.000000781874,8,0",
+              "Position": "-0.00001646232,16,0",
               "Rotation": "0.006170625,-0.006170566,0.7070804,0.7070793",
               "Scale": "1,1,1",
               "Tags": ""

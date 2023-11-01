@@ -1,0 +1,40 @@
+{
+  "RootObject": {
+    "Id": "ea4e4db4-4eed-46c0-b6c4-07566ac85dbd",
+    "Name": "frost_projectile_impact",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Components": [
+      {
+        "__type": "ParticleSystem",
+        "__enabled": true,
+        "Looped": false,
+        "Particles": "particles/frost_impact_01.vpcf",
+        "PlaybackSpeed": 1
+      },
+      {
+        "__type": "SelfDestructComponent",
+        "__enabled": true,
+        "Seconds": 0.5
+      },
+      {
+        "__type": "ParticleSystem",
+        "__enabled": true,
+        "Looped": false,
+        "Particles": "particles/frost_steam_01.vpcf",
+        "PlaybackSpeed": 1
+      },
+      {
+        "__type": "ParticleSystem",
+        "__enabled": true,
+        "Looped": false,
+        "Particles": "particles/frost_shards_explosion_01.vpcf",
+        "PlaybackSpeed": 1
+      }
+    ]
+  },
+  "__references": []
+}
