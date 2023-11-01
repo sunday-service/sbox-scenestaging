@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "dcf4532f-261f-4c00-a3dd-a2f32a050374",
+    "Id": "1afa03ee-a6f9-406d-b312-5842008da3c4",
     "Name": "lava_rock_projectile",
     "Enabled": true,
     "Position": "0,0,0",
@@ -17,7 +17,7 @@
     ],
     "Children": [
       {
-        "Id": "eee661ad-a95b-4985-82ce-ddd3756cec84",
+        "Id": "94d6a154-9e65-412f-9e47-813e7075afb8",
         "Name": "Model",
         "Enabled": true,
         "Position": "0,0,0",
@@ -40,6 +40,24 @@
             "IsTrigger": false,
             "Radius": 3.4000058,
             "Surface": null
+          }
+        ]
+      },
+      {
+        "Id": "770738d2-8c8e-41dc-90f5-e9edc1a0ba37",
+        "Name": "Model Particle",
+        "Enabled": true,
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "ParticleSystem",
+            "__enabled": true,
+            "Looped": true,
+            "Particles": "particles/torch_flame.vpcf",
+            "PlaybackSpeed": 2
           }
         ]
       }
