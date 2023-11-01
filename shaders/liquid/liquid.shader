@@ -31,6 +31,9 @@ COMMON
 
 	#define CULL_MODE_ALREADY_SET
     #define DEPTH_STATE_ALREADY_SET
+
+	float g_flWobbleX <Attribute("WobbleX"); Range(-8, 4); Default(0);>;
+	float g_flWobbleY <Attribute("WobbleY"); Range(-8, 4); Default(0);>;
 }
 
 //=========================================================================================================================
@@ -54,9 +57,6 @@ struct PixelInput
 VS
 {
 	#include "common/vertex.hlsl"
-
-	float g_flWobbleX <Attribute("WobbleX"); Range(-8, 4); Default(0);>;
-	float g_flWobbleY <Attribute("WobbleY"); Range(-8, 4); Default(0);>;
 
 	float3 RotateAroundX(float3 position, float degrees) 
 	{
@@ -114,9 +114,18 @@ PS
 
 	float4 MainPs( PixelInput i, bool isFrontFace : SV_IsFrontFace ) : SV_Target0
 	{
-		float fill = step(i.vFillPosition.z, 0);
+		float wobbleIntensity = abs(g_flWobbleX) + abs(g_flWobbleY);
+		float wobble = sin((i.vFillPosition.x * 8) + (i.vFillPosition.y * 8) + (g_flTime)) * (0.1 * wobbleIntensity);
+
+		float fill = step(i.vFillPosition.z + wobble, 0);
 		
 		float3 color = lerp(g_vFillColorUpper,  g_vFillColorLower, i.vFillPosition.z );
+
+		float3 viewDirection = CalculatePositionToCameraDirWs(i.vPositionWithOffsetWs + g_vHighPrecisionLightingOffsetWs.xyz );
+		float3 frensel = pow(1.0 - dot(normalize(i.vNormalWs), normalize(viewDirection)), 2);
+
+		color += frensel;
+
 		float3 colors = lerp(g_vFFoamColor, color, isFrontFace).xyz;
 		
 		return float4(colors, fill);
