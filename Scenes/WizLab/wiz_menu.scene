@@ -53,7 +53,7 @@
           "Id": "6aaac9a1-c149-404b-ada2-dab7e6c628b2",
           "Name": "Point Light",
           "Enabled": true,
-          "Position": "2070.052,0,-19.39837",
+          "Position": "2509.495,0,-19.39837",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -70,7 +70,7 @@
           "Id": "98df1f00-7af0-498b-b292-9717f05c819e",
           "Name": "logo",
           "Enabled": true,
-          "Position": "1786.575,-0.001064881,-0.0001064423",
+          "Position": "2368.253,-0.001411589,-0.0001410981",
           "Rotation": "-0.0000000415189,0.0000000006098002,-0.707107,0.7071065",
           "Scale": "5.398753,5.398753,5.398753",
           "Tags": "",
@@ -139,7 +139,7 @@
       "Id": "9866acea-4a6e-4997-9a3a-34982c31a975",
       "Name": "Point Light",
       "Enabled": true,
-      "Position": "2074.811,-488.0915,-19.39837",
+      "Position": "2444.233,-488.0915,-19.39837",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -156,7 +156,7 @@
       "Id": "405d9a37-fd27-491b-8d42-5ac62b5c5d4a",
       "Name": "Point Light",
       "Enabled": true,
-      "Position": "1916.335,619.1058,-19.39837",
+      "Position": "2553.411,619.1058,-19.39837",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -173,7 +173,7 @@
       "Id": "9d4c08cf-12a1-4868-9be8-2b91c9372824",
       "Name": "Point Light",
       "Enabled": true,
-      "Position": "2063.272,301.5779,-19.39837",
+      "Position": "2535.141,301.5779,-19.39837",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -207,29 +207,11 @@
       ]
     },
     {
-      "Id": "6535a9e6-3b4b-4a58-921a-f31daba0a120",
-      "Name": "Object",
-      "Enabled": true,
-      "Position": "1267.716,-44.36872,-257.765",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Components": [
-        {
-          "__type": "ParticleSystem",
-          "__enabled": true,
-          "Looped": false,
-          "Particles": "particles/firebomb_flames.vpcf",
-          "PlaybackSpeed": 1
-        }
-      ]
-    },
-    {
       "Id": "171b15ca-f226-4955-ae6a-f9112769abee",
       "Name": "Directional Light",
       "Enabled": true,
       "Position": "0.00010331,140.1252,560.5011",
-      "Rotation": "0.3209166,0.530632,-0.4383841,0.6505855",
+      "Rotation": "-0.04906627,-0.03202201,-0.5410738,0.838932",
       "Scale": "1,1,1",
       "Tags": "",
       "Components": [
@@ -238,7 +220,7 @@
           "__enabled": true,
           "LightColor": "0.47525,0.11528,0.19448,1",
           "Shadows": true,
-          "SkyColor": "0.72277,0.19322,0.19322,1"
+          "SkyColor": "0.93564,0.71331,0.71331,1"
         }
       ]
     },
@@ -258,9 +240,110 @@
             "Mins": "-1024,-1024,-1024",
             "Maxs": "1024,1024,1024"
           },
-          "Projection": "Sphere",
+          "Projection": "Box",
           "Texture": "textures/cubemaps/default2.vtex",
           "TintColor": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "9f76e6ee-8096-46e0-b64f-aa8e980badb2",
+      "Name": "Object",
+      "Enabled": false,
+      "Position": "287.5357,103.9003,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Children": [
+        {
+          "Id": "6535a9e6-3b4b-4a58-921a-f31daba0a120",
+          "Name": "Object",
+          "Enabled": true,
+          "Position": "2163.703,-44.36872,-464.4724",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ParticleSystem",
+              "__enabled": true,
+              "Looped": false,
+              "Particles": "particles/firebomb.vpcf",
+              "PlaybackSpeed": 1
+            }
+          ]
+        },
+        {
+          "Id": "0f99b5e2-7ba0-4d2d-8182-7f121acdcbd0",
+          "Name": "Object",
+          "Enabled": true,
+          "Position": "2163.703,63.61775,-464.4724",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ParticleSystem",
+              "__enabled": true,
+              "Looped": false,
+              "Particles": "particles/firebomb.vpcf",
+              "PlaybackSpeed": 1
+            }
+          ]
+        },
+        {
+          "Id": "74047448-c763-434d-9bd2-02b57f175576",
+          "Name": "Object",
+          "Enabled": true,
+          "Position": "2163.703,193.897,-464.4724",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ParticleSystem",
+              "__enabled": true,
+              "Looped": false,
+              "Particles": "particles/firebomb.vpcf",
+              "PlaybackSpeed": 1
+            }
+          ]
+        },
+        {
+          "Id": "4e9c8ca1-0b0e-4145-91e3-ea918a4cb968",
+          "Name": "Object",
+          "Enabled": true,
+          "Position": "2163.703,319.1227,-464.4724",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ParticleSystem",
+              "__enabled": true,
+              "Looped": false,
+              "Particles": "particles/firebomb.vpcf",
+              "PlaybackSpeed": 1
+            }
+          ]
+        },
+        {
+          "Id": "4f3cb740-fb0b-42cd-8864-5f8ab851120f",
+          "Name": "Object",
+          "Enabled": true,
+          "Position": "2163.703,410.698,-464.4724",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ParticleSystem",
+              "__enabled": true,
+              "Looped": false,
+              "Particles": "particles/firebomb.vpcf",
+              "PlaybackSpeed": 1
+            }
+          ]
         }
       ]
     }
