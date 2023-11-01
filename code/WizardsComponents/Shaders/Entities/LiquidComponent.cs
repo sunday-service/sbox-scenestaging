@@ -3,9 +3,12 @@ using System;
 
 public sealed class LiquidComponent : BaseComponent, BaseComponent.ExecuteInEditor
 {
-	[Property] public float WobbleX { get; set; } = 0;
-	[Property] public float WobbleY { get; set; } = 0;
+	[Property] public float WobbleX { get; set; } = 0f;
+	[Property] public float WobbleY { get; set; } = 0f;
 	[Property] public float MaxWobble { get; set; } = 0.08f;
+
+	[Property] public float WobbleFrequency { get; set; } = 8f;
+	[Property] public float WobbleAmplitude { get; set; } = 0.1f;
 
 	float BobTime { get; set; } = 0.75f;
 
@@ -33,6 +36,8 @@ public sealed class LiquidComponent : BaseComponent, BaseComponent.ExecuteInEdit
 
 			model.Attributes.Set( "WobbleX", wobbleAmountX );
 			model.Attributes.Set( "WobbleY", wobbleAmountY );
+			model.Attributes.Set( "FillWobbleFrequency", WobbleFrequency );
+			model.Attributes.Set( "FillWobbleAmplitude", WobbleAmplitude );
 
 			var velocity = (LastPosition - Transform.Position) / Time.Delta;
 			var angularVelocity = Transform.Rotation.Angles().AsVector3() - LastRotation;

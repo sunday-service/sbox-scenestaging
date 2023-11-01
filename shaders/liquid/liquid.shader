@@ -112,11 +112,14 @@ PS
 	float3 g_vFillColorLower < Attribute("FillColorLower");  Default3(0, 0, 1); >;
 	float3 g_vFFoamColor <Attribute("FillColorFoam"); Default3(0, 0.6, 0.7); >;
 
+	float g_flFillWobbleFrequency <Attribute("FillWobbleFrequency"); UiType( Slider); Range(0, 64.0); Default(8);>;
+	float g_flFillWobbleAmplitude <Attribute("FillWobbleAmplitude"); UiType( Slider); Range(0, 1.0); Default(0.1);>;
+
 	float4 MainPs( PixelInput i, bool isFrontFace : SV_IsFrontFace ) : SV_Target0
 	{
 		float wobbleIntensity = abs(g_flWobbleX) + abs(g_flWobbleY);
-		float wobble = sin((i.vFillPosition.x * 8) + (i.vFillPosition.y * 8) + (g_flTime)) * (0.1 * wobbleIntensity);
-
+		float wobble = sin((i.vFillPosition.x * g_flFillWobbleFrequency) + (i.vFillPosition.y * g_flFillWobbleFrequency) + (g_flTime)) * (g_flFillWobbleAmplitude * wobbleIntensity);
+		
 		float fill = step(i.vFillPosition.z + wobble, 0);
 		
 		float3 color = lerp(g_vFillColorUpper,  g_vFillColorLower, i.vFillPosition.z );

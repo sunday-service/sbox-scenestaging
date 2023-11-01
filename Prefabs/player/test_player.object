@@ -1,7 +1,7 @@
 {
   "RootObject": {
     "Id": "f4782c5c-9afd-4ce3-8990-52876dea512c",
-    "Name": "Test Player",
+    "Name": "test_player",
     "Enabled": true,
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
@@ -266,6 +266,8 @@
                                                         "__type": "LiquidComponent",
                                                         "__enabled": true,
                                                         "MaxWobble": 0.0025,
+                                                        "WobbleAmplitude": 0.08,
+                                                        "WobbleFrequency": 4,
                                                         "WobbleX": 0,
                                                         "WobbleY": 0
                                                       }
@@ -645,6 +647,8 @@
                                                         "__type": "LiquidComponent",
                                                         "__enabled": true,
                                                         "MaxWobble": 0.0025,
+                                                        "WobbleAmplitude": 0.1,
+                                                        "WobbleFrequency": 8,
                                                         "WobbleX": 0,
                                                         "WobbleY": 0
                                                       }

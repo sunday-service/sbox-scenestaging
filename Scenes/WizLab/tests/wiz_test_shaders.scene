@@ -102,6 +102,15 @@
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Scale": "36,36,128",
+          "Surface": null
+        }
+      ],
       "Children": [
         {
           "Id": "6c63bb23-3f83-4621-9bcb-0ef0f2378edb",
@@ -145,7 +154,7 @@
               "__type": "BobSpinComponent",
               "__enabled": true,
               "Amplitude": 0.05,
-              "RotationSpeed": 32
+              "RotationSpeed": 45
             }
           ]
         }
@@ -159,6 +168,15 @@
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Scale": "36,36,128",
+          "Surface": null
+        }
+      ],
       "Children": [
         {
           "Id": "0bb91da4-3fce-429b-90a0-414e161a3e67",
@@ -202,7 +220,7 @@
               "__type": "BobSpinComponent",
               "__enabled": true,
               "Amplitude": 0.05,
-              "RotationSpeed": 32
+              "RotationSpeed": 45
             }
           ]
         }
