@@ -10,11 +10,13 @@ public sealed class ProjectileImpact : BaseComponent, BaseComponent.ICollisionLi
 		{
 			SceneUtility.Instantiate( ImpactParticles, o.Contact.Point );
 		}
+
+		GameObject.DestroyImmediate();
 	}
 
 	public void OnCollisionStop( CollisionStop other )
 	{
-		GameObject.Destroy();
+		
 	}
 
 	public void OnCollisionUpdate( Collision other )
