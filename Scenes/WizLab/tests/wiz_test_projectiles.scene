@@ -261,6 +261,94 @@
       ]
     },
     {
+      "Id": "43e572cd-0e09-47d0-a388-2b18d2662e8f",
+      "Name": "Poison Projectile Emitter",
+      "Enabled": true,
+      "Position": "256,32,6.250154",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ShootTestComponent",
+          "__enabled": true,
+          "Muzzle": "41c1eb95-2625-4caf-b8e4-7d4b13b23aad",
+          "Projectile": "prefabs/projectiles/poison_projectile.object",
+          "ProjectileVelocityMultiplier": 512,
+          "ShootInterval": 3
+        },
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Scale": "25,25,84",
+          "Surface": null
+        }
+      ],
+      "Children": [
+        {
+          "Id": "958048c8-38e3-4a93-9486-31dff308e2d7",
+          "Name": "Cube",
+          "Enabled": true,
+          "Position": "0,0,6.25",
+          "Rotation": "0,0,0,1",
+          "Scale": "0.5,0.5,0.5",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "e559efa4-74cf-4f25-a62e-e950d6b5d295",
+          "Name": "Emitter",
+          "Enabled": true,
+          "Position": "0,0,35.50935",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Children": [
+            {
+              "Id": "9e9d8276-7c03-4018-b261-bd95e82f56bc",
+              "Name": "Cube",
+              "Enabled": true,
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "0.25,0.25,0.25",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": null,
+                  "Model": "models/dev/box.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "41c1eb95-2625-4caf-b8e4-7d4b13b23aad",
+              "Name": "Muzzle",
+              "Enabled": true,
+              "Position": "-0.00004627464,28,0",
+              "Rotation": "0.006170625,-0.006170566,0.7070804,0.7070793",
+              "Scale": "1,1,1",
+              "Tags": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
       "Id": "42d5250e-885a-44be-aea1-351d76d4673f",
       "Name": "Cluster Projectile Emitter",
       "Enabled": true,

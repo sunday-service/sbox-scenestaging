@@ -1,0 +1,26 @@
+{
+  "RootObject": {
+    "Id": "8a99b432-03e3-439f-96d8-997ba54f5ff3",
+    "Name": "poison_projectile_impact",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Components": [
+      {
+        "__type": "ParticleSystem",
+        "__enabled": true,
+        "Looped": false,
+        "Particles": "particles/projectiles/poison/poison_gas_cloud_linger_02.vpcf",
+        "PlaybackSpeed": 1
+      },
+      {
+        "__type": "SelfDestructComponent",
+        "__enabled": true,
+        "Seconds": 2
+      }
+    ]
+  },
+  "__references": []
+}
