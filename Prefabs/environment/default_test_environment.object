@@ -1,0 +1,109 @@
+{
+  "RootObject": {
+    "Id": "b8d6fa91-a3da-4463-a09d-dc977d6cf3a5",
+    "Name": "Default Test Environment",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Children": [
+      {
+        "Id": "e86b84e6-ebbf-4a23-b3c5-c8993df2b3be",
+        "Name": "Environment",
+        "Enabled": true,
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Children": [
+          {
+            "Id": "e7867560-df7e-4d0e-8a18-bdd70b6d73e8",
+            "Name": "Surface",
+            "Enabled": true,
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "16,16,16",
+            "Tags": "world",
+            "Components": [
+              {
+                "__type": "ModelComponent",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialOverride": "materials/shine.vmat",
+                "Model": "models/dev/plane.vmdl",
+                "ShouldCastShadows": true,
+                "Tint": "0.05882,0.13725,0.49412,1"
+              },
+              {
+                "__type": "ColliderBoxComponent",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Scale": "100,100,0.01",
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "7316198d-6a5d-4311-8522-9e2f34c818bb",
+            "Name": "Cubemap",
+            "Enabled": true,
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Components": [
+              {
+                "__type": "EnvmapComponent",
+                "__enabled": true,
+                "Bounds": {
+                  "Mins": "-1024,-1024,8",
+                  "Maxs": "1024,1024,512"
+                },
+                "Projection": "Box",
+                "Texture": "textures/cubemaps/default2.vtex",
+                "TintColor": "1,1,1,1"
+              }
+            ]
+          },
+          {
+            "Id": "0dd3ad0f-851f-4ed6-8eb9-3ed2321becbb",
+            "Name": "SkyBox",
+            "Enabled": true,
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Components": [
+              {
+                "__type": "SkyBox2D",
+                "__enabled": true,
+                "SkyMaterial": "materials/skybox/light_test_sky_night_basic.vmat",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          },
+          {
+            "Id": "f49ab4f9-98f6-47e9-98bf-a6c7817a0e38",
+            "Name": "Directional Light",
+            "Enabled": true,
+            "Position": "0,0,512",
+            "Rotation": "0.4351622,0.4351622,-0.5573454,0.5573453",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Components": [
+              {
+                "__type": "DirectionalLightComponent",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Shadows": true,
+                "SkyColor": "0.05882,0.07451,0.08235,1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "__references": []
+}

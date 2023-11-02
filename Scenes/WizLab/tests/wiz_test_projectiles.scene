@@ -1,90 +1,6 @@
 {
   "GameObjects": [
     {
-      "Id": "394e0c96-b498-4fd1-b791-63febd2cd865",
-      "Name": "Surface",
-      "Enabled": true,
-      "Position": "0,0,0",
-      "Rotation": "0,0,0,1",
-      "Scale": "10,10,10",
-      "Tags": "world",
-      "Components": [
-        {
-          "__type": "ModelComponent",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/shine.vmat",
-          "Model": "models/dev/plane.vmdl",
-          "ShouldCastShadows": true,
-          "Tint": "0.05882,0.13725,0.49412,1"
-        },
-        {
-          "__type": "ColliderBoxComponent",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Scale": "100,100,0.01",
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "8954149d-bfc4-4e15-b6c9-206936b1daf1",
-      "Name": "Cubemap",
-      "Enabled": true,
-      "Position": "0,0,0",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Components": [
-        {
-          "__type": "EnvmapComponent",
-          "__enabled": true,
-          "Bounds": {
-            "Mins": "-512,-512,-512",
-            "Maxs": "512,512,512"
-          },
-          "Projection": "Box",
-          "Texture": "textures/cubemaps/default2.vtex",
-          "TintColor": "1,1,1,1"
-        }
-      ]
-    },
-    {
-      "Id": "cba86b59-6d9c-4fb8-be15-24833248a659",
-      "Name": "SkyBox",
-      "Enabled": true,
-      "Position": "0,0,0",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Components": [
-        {
-          "__type": "SkyBox2D",
-          "__enabled": true,
-          "SkyMaterial": "materials/skybox/light_test_sky_night_basic.vmat",
-          "Tint": "1,1,1,1"
-        }
-      ]
-    },
-    {
-      "Id": "098bff85-45ca-4c59-a9a7-83d2233c2226",
-      "Name": "Directional Light",
-      "Enabled": true,
-      "Position": "0,0,0",
-      "Rotation": "0.4351622,0.4351622,-0.5573454,0.5573453",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Components": [
-        {
-          "__type": "DirectionalLightComponent",
-          "__enabled": true,
-          "LightColor": "0.91373,0.98039,1,1",
-          "Shadows": true,
-          "SkyColor": "0.05882,0.07451,0.08235,1"
-        }
-      ]
-    },
-    {
       "Id": "c316c1f0-22e8-4680-bb8b-b2d315311537",
       "Name": "Bouncy Projectile Emitter",
       "Enabled": true,
@@ -445,6 +361,16 @@
       "Scale": "1,1,1",
       "Tags": "",
       "__Prefab": "prefabs/player/test_player.object"
+    },
+    {
+      "Id": "63e78050-a044-4c35-9dcd-fb4c27ead0ef",
+      "Name": "Default Test Environment",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "__Prefab": "prefabs/environment/default_test_environment.object"
     }
   ],
   "__references": []
