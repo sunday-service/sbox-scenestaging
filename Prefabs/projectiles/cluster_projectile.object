@@ -1,7 +1,7 @@
 {
   "RootObject": {
-    "Id": "30da4a35-fae5-4af5-9fe3-44d611748471",
-    "Name": "lava_rock_projectile",
+    "Id": "8ca8f517-ab5d-4fc2-b3f3-71912d78c320",
+    "Name": "cluster_projectile",
     "Enabled": true,
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
@@ -18,11 +18,25 @@
         "__type": "SelfDestructComponent",
         "__enabled": true,
         "Seconds": 4
+      },
+      {
+        "__type": "ColliderSphereComponent",
+        "__enabled": true,
+        "IsTrigger": false,
+        "Radius": 3.5,
+        "Surface": null
+      },
+      {
+        "__type": "ClusterProjectile",
+        "__enabled": true,
+        "NumberOfProjectiles": 3,
+        "Projectile": "prefabs/projectiles/lava_rock_cluster_projectile.object",
+        "ProjectileSpread": 128
       }
     ],
     "Children": [
       {
-        "Id": "a8fb2dbf-8c07-4ced-b281-10525668d21c",
+        "Id": "a00936e1-d404-487b-97f0-655d471e73f3",
         "Name": "Model",
         "Enabled": true,
         "Position": "0,0,0",
@@ -38,18 +52,11 @@
             "Model": "models/weapons/projectiles/lavarock.vmdl",
             "ShouldCastShadows": true,
             "Tint": "1,1,1,1"
-          },
-          {
-            "__type": "ColliderSphereComponent",
-            "__enabled": true,
-            "IsTrigger": false,
-            "Radius": 3.4000058,
-            "Surface": "surfaces/bouncy.surface"
           }
         ]
       },
       {
-        "Id": "0c1fac0f-ddb0-435a-a8e6-4fbd46ddbc76",
+        "Id": "e28a7e13-9127-4ff7-bc8a-914f1a4fee42",
         "Name": "Model Particle",
         "Enabled": true,
         "Position": "0,0,0",

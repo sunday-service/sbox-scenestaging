@@ -86,7 +86,7 @@
     },
     {
       "Id": "c316c1f0-22e8-4680-bb8b-b2d315311537",
-      "Name": "Projectile Emitter",
+      "Name": "Bouncy Projectile Emitter",
       "Enabled": true,
       "Position": "0,32,6.250154",
       "Rotation": "0,0,0,1",
@@ -97,9 +97,16 @@
           "__type": "ShootTestComponent",
           "__enabled": true,
           "Muzzle": "f9f80e4b-2a22-4654-8e76-78f988be657e",
-          "Projectile": "prefabs/projectiles/lava_rock_projectile.object",
+          "Projectile": "prefabs/projectiles/lava_rock_bouncy_projectile.object",
           "ProjectileVelocityMultiplier": 256,
           "ShootInterval": 3
+        },
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Scale": "25,25,84",
+          "Surface": null
         }
       ],
       "Children": [
@@ -181,6 +188,13 @@
           "Projectile": "prefabs/projectiles/frost_projectile.object",
           "ProjectileVelocityMultiplier": 512,
           "ShootInterval": 3
+        },
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Scale": "25,25,84",
+          "Surface": null
         }
       ],
       "Children": [
@@ -235,6 +249,94 @@
             },
             {
               "Id": "c80e108b-55a4-4672-94a4-3e1d922a0834",
+              "Name": "Muzzle",
+              "Enabled": true,
+              "Position": "-0.00001646232,16,0",
+              "Rotation": "0.006170625,-0.006170566,0.7070804,0.7070793",
+              "Scale": "1,1,1",
+              "Tags": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "42d5250e-885a-44be-aea1-351d76d4673f",
+      "Name": "Cluster Projectile Emitter",
+      "Enabled": true,
+      "Position": "-128,32,6.250154",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ShootTestComponent",
+          "__enabled": true,
+          "Muzzle": "7bb212f6-8fc2-4e5e-8a9e-71b03c88e842",
+          "Projectile": "prefabs/projectiles/cluster_projectile.object",
+          "ProjectileVelocityMultiplier": 512,
+          "ShootInterval": 3
+        },
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Scale": "25,25,84",
+          "Surface": null
+        }
+      ],
+      "Children": [
+        {
+          "Id": "a2c334cb-3808-4409-b819-0646f9e167f2",
+          "Name": "Cube",
+          "Enabled": true,
+          "Position": "0,0,6.25",
+          "Rotation": "0,0,0,1",
+          "Scale": "0.5,0.5,0.5",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "526e391d-38b9-4edf-8245-8513813374e1",
+          "Name": "Emitter",
+          "Enabled": true,
+          "Position": "0,0,35.50935",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Children": [
+            {
+              "Id": "5ff8bc33-71c3-4822-a9a1-4dc460da6a34",
+              "Name": "Cube",
+              "Enabled": true,
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "0.25,0.25,0.25",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": null,
+                  "Model": "models/dev/box.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "7bb212f6-8fc2-4e5e-8a9e-71b03c88e842",
               "Name": "Muzzle",
               "Enabled": true,
               "Position": "-0.00001646232,16,0",

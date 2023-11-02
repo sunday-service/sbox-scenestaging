@@ -1,7 +1,7 @@
 {
   "RootObject": {
-    "Id": "ea4e4db4-4eed-46c0-b6c4-07566ac85dbd",
-    "Name": "frost_projectile_impact",
+    "Id": "8a99b432-03e3-439f-96d8-997ba54f5ff3",
+    "Name": "Frost Projectile Impact",
     "Enabled": true,
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",

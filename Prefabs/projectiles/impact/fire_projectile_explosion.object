@@ -1,0 +1,26 @@
+{
+  "RootObject": {
+    "Id": "8dd8dc12-1461-4670-ab6d-1e087ccbefed",
+    "Name": "Explosive Projectile Impact",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Components": [
+      {
+        "__type": "ParticleSystem",
+        "__enabled": true,
+        "Looped": false,
+        "Particles": "particles/explosion_rock_mushroom_01.vpcf",
+        "PlaybackSpeed": 1
+      },
+      {
+        "__type": "SelfDestructComponent",
+        "__enabled": true,
+        "Seconds": 0.5
+      }
+    ]
+  },
+  "__references": []
+}
