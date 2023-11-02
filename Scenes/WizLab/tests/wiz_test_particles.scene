@@ -258,6 +258,8 @@
                                                       "__type": "LiquidComponent",
                                                       "__enabled": true,
                                                       "MaxWobble": 0.0025,
+                                                      "WobbleAmplitude": 0.1,
+                                                      "WobbleFrequency": 8,
                                                       "WobbleX": 0,
                                                       "WobbleY": 0
                                                     }
@@ -637,6 +639,8 @@
                                                       "__type": "LiquidComponent",
                                                       "__enabled": true,
                                                       "MaxWobble": 0.0025,
+                                                      "WobbleAmplitude": 0.1,
+                                                      "WobbleFrequency": 8,
                                                       "WobbleX": 0,
                                                       "WobbleY": 0
                                                     }
@@ -1620,15 +1624,6 @@
       "Tags": "",
       "Components": [
         {
-          "__type": "ModelComponent",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialOverride": null,
-          "Model": "models/dev/wall/wall_01.vmdl",
-          "ShouldCastShadows": true,
-          "Tint": "1,1,1,1"
-        },
-        {
           "__type": "ColliderBoxComponent",
           "__enabled": true,
           "IsTrigger": false,
@@ -1752,6 +1747,37 @@
                   "Looped": false,
                   "Particles": "particles/torch_flame_mana.vpcf",
                   "PlaybackSpeed": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "e550d290-47b2-4662-b92e-acb11386cb50",
+          "Name": "Model",
+          "Enabled": true,
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Children": [
+            {
+              "Id": "e720c9a8-2b4e-4502-b6af-68b795b59686",
+              "Name": "Plane",
+              "Enabled": true,
+              "Position": "0,-0.00003656251,62.5",
+              "Rotation": "-0.4999997,-0.5000007,0.4999993,-0.5000003",
+              "Scale": "1.25,1.25,1.25",
+              "Tags": "",
+              "Components": [
+                {
+                  "__type": "ModelComponent",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/reflectivity_90.vmat",
+                  "Model": "models/dev/plane.vmdl",
+                  "ShouldCastShadows": true,
+                  "Tint": "1,1,1,1"
                 }
               ]
             }

@@ -62,7 +62,7 @@
               "__type": "PointLightComponent",
               "__enabled": true,
               "LightColor": "1,0,0,1",
-              "Radius": 400
+              "Radius": 1000
             }
           ]
         },
@@ -139,7 +139,7 @@
       "Id": "9866acea-4a6e-4997-9a3a-34982c31a975",
       "Name": "Point Light",
       "Enabled": true,
-      "Position": "2444.233,-488.0915,-19.39837",
+      "Position": "2444.233,-335.5147,-106.2691",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -148,7 +148,7 @@
           "__type": "PointLightComponent",
           "__enabled": true,
           "LightColor": "1,0,0,1",
-          "Radius": 400
+          "Radius": 1000
         }
       ]
     },
@@ -165,7 +165,7 @@
           "__type": "PointLightComponent",
           "__enabled": true,
           "LightColor": "1,0,0,1",
-          "Radius": 200
+          "Radius": 1000
         }
       ]
     },
@@ -173,7 +173,7 @@
       "Id": "9d4c08cf-12a1-4868-9be8-2b91c9372824",
       "Name": "Point Light",
       "Enabled": true,
-      "Position": "2535.141,301.5779,-19.39837",
+      "Position": "2535.141,550.6418,-19.39837",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -182,7 +182,7 @@
           "__type": "PointLightComponent",
           "__enabled": true,
           "LightColor": "1,0,0,1",
-          "Radius": 600
+          "Radius": 1000
         }
       ]
     },
@@ -344,6 +344,26 @@
               "PlaybackSpeed": 1
             }
           ]
+        }
+      ]
+    },
+    {
+      "Id": "84f32b14-c93c-4c2f-b108-0d1a6a64be4a",
+      "Name": "Plane",
+      "Enabled": true,
+      "Position": "2780.167,0.0001516636,-772.7872",
+      "Rotation": "0.00000001928698,-0.707107,0.00000001928714,0.7071065",
+      "Scale": "34.65435,34.65435,34.65435",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ModelComponent",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/dev/reflectivity_10b.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "0,0,0,1"
         }
       ]
     }
