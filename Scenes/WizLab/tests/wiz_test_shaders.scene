@@ -88,7 +88,7 @@
       "Id": "eeec0997-e2cf-4d07-bd58-06a051738098",
       "Name": "Test Player",
       "Enabled": true,
-      "Position": "0,0,0.1",
+      "Position": "-95.6802,0,0.1",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -98,7 +98,7 @@
       "Id": "48faf862-0218-4322-99f0-06d11e294aa9",
       "Name": "Liquid Shader",
       "Enabled": true,
-      "Position": "0,0,0",
+      "Position": "0,15.7972,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -155,6 +155,20 @@
               "__enabled": true,
               "Amplitude": 0.05,
               "RotationSpeed": 45
+            },
+            {
+              "__type": "LiquidComponent",
+              "__enabled": true,
+              "FillAmount": -3.733377,
+              "FillColorFoam": "0.26125,0.33834,0.81188,0",
+              "FillColorLower": "0.06,1,0,0",
+              "FillColorUpper": "0,0.18,1,0",
+              "MaxWobble": 0.002,
+              "RimLightStrengthPower": 1.5,
+              "WobbleAmplitude": 0.1,
+              "WobbleFrequency": 8,
+              "WobbleX": 0.13333192,
+              "WobbleY": 0
             }
           ]
         }

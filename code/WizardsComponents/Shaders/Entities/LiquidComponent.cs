@@ -3,6 +3,13 @@ using System;
 
 public sealed class LiquidComponent : BaseComponent, BaseComponent.ExecuteInEditor
 {
+	[Property] public float FillAmount { get; set; } = 0.5f;
+	[Property] public Color FillColorFoam { get; set; }
+	[Property] public Color FillColorUpper { get; set; }
+	[Property] public Color FillColorLower { get; set; }
+
+	[Property] public float RimLightStrengthPower { get; set; } = 2;
+
 	[Property] public float WobbleX { get; set; } = 0f;
 	[Property] public float WobbleY { get; set; } = 0f;
 	[Property] public float MaxWobble { get; set; } = 0.08f;
@@ -34,10 +41,21 @@ public sealed class LiquidComponent : BaseComponent, BaseComponent.ExecuteInEdit
 			var wobbleAmountX = WobbleAmountAddX * (float)Math.Sin( pulse * BobTime );
 			var wobbleAmountY = WobbleAmountAddY * (float)Math.Sin( pulse * BobTime );
 
+			model.Attributes.Set( "FillColorFoam", FillColorFoam );
+			model.Attributes.Set( "FillColorUpper", FillColorUpper );
+			model.Attributes.Set( "FillColorLower", FillColorLower );
+			model.Attributes.Set( "RimLightStrengthPower", RimLightStrengthPower );
+
 			model.Attributes.Set( "WobbleX", wobbleAmountX );
 			model.Attributes.Set( "WobbleY", wobbleAmountY );
 			model.Attributes.Set( "FillWobbleFrequency", WobbleFrequency );
 			model.Attributes.Set( "FillWobbleAmplitude", WobbleAmplitude );
+
+			var position = Transform.Position - Transform.LocalPosition - new Vector3( 0, 0, FillAmount );
+
+			//Log.Info( $"{Transform.Position.z} {Transform.Position - Transform.LocalPosition} {position.z} {position.Normal}" );
+
+			model.Attributes.Set( "FillAmount", FillAmount );
 
 			var velocity = (LastPosition - Transform.Position) / Time.Delta;
 			var angularVelocity = Transform.Rotation.Angles().AsVector3() - LastRotation;
@@ -47,7 +65,6 @@ public sealed class LiquidComponent : BaseComponent, BaseComponent.ExecuteInEdit
 
 			LastPosition = Transform.Position;
 			LastRotation = Transform.Rotation.Angles().AsVector3();
-
 		}
 	}
 }
