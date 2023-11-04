@@ -2,7 +2,7 @@
 
 HEADER
 {
-	Description = "Liquid Shader for S&box";
+	Description = "Simple Liquid Shader for S&box";
 }
 
 //=========================================================================================================================
@@ -35,7 +35,7 @@ COMMON
 	float g_flWobbleX <Attribute("WobbleX"); Range(-8, 4); Default(0);>;
 	float g_flWobbleY <Attribute("WobbleY"); Range(-8, 4); Default(0);>;
 
-	float3 g_flFillAmount < Attribute("FillAmount");  Default3(0, 0, 0); >;
+	
 }
 
 //=========================================================================================================================
@@ -92,7 +92,7 @@ VS
 	{
 		PixelInput i = ProcessVertex( v );
 
-		float3 vPositionWs = mul(CalculateInstancingObjectToWorldMatrix( INSTANCING_PARAMS( v ) ), v.vPositionOs.xyz) + g_flFillAmount;
+		float3 vPositionWs = normalize(mul(CalculateInstancingObjectToWorldMatrix(v), v.vPositionOs.xyz));
 
 		float3 worldPosX = RotateAroundX(vPositionWs, 90);
 		float3 worldPosY = RotateAroundY(vPositionWs, 90);
@@ -109,11 +109,13 @@ PS
 {
     #include "common/pixel.hlsl"
 
-	float g_flFillLevel <UiType( Slider); Range(-1.0, 1.0); Default(0.75);>;
+	float g_flFillAmount < Attribute("FillAmount"); Range(0, 1.0); Default(0.5f); >;
+	
 	float3 g_vFFoamColor <Attribute("FillColorFoam"); Default3(0, 0.6, 0.7); >;
 	float3 g_vFillColorUpper < Attribute("FillColorUpper");  Default3(0, 0.5, 0.5); >;
 	float3 g_vFillColorLower < Attribute("FillColorLower");  Default3(0, 0, 1); >;
 	float g_flRimStrengthPower <Attribute("RimLightStrengthPower"); Default(2); >;
+	
 	float g_flFillWobbleFrequency <Attribute("FillWobbleFrequency"); UiType( Slider); Range(0, 64.0); Default(8);>;
 	float g_flFillWobbleAmplitude <Attribute("FillWobbleAmplitude"); UiType( Slider); Range(0, 1.0); Default(0.1);>;
 
@@ -121,8 +123,8 @@ PS
 	{
 		float wobbleIntensity = abs(g_flWobbleX) + abs(g_flWobbleY);
 		float wobble = sin((i.vFillPosition.x * g_flFillWobbleFrequency) + (i.vFillPosition.y * g_flFillWobbleFrequency) + (g_flTime)) * (g_flFillWobbleAmplitude * wobbleIntensity);
-		
-		float fill = step(i.vFillPosition.z + wobble, 0.5f);
+	
+		float fill = step(i.vFillPosition.z + wobble, (2*g_flFillAmount)-1);
 		
 		float3 color = lerp(g_vFillColorUpper, g_vFillColorLower, i.vTextureCoords.y);
 

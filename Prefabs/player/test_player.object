@@ -265,7 +265,7 @@
                                                       {
                                                         "__type": "LiquidComponent",
                                                         "__enabled": true,
-                                                        "FillAmount": 1.0666655,
+                                                        "FillAmount": 0.60003173,
                                                         "FillColorFoam": "1,0.16832,0.16832,0",
                                                         "FillColorLower": "1,0,0,0",
                                                         "FillColorUpper": "0.94059,0.1071,0.1071,0",
