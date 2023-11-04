@@ -44,6 +44,13 @@
             "IkLeftHand": "3899a950-63ad-4026-8878-4c6c2cbdda8d",
             "IkRightHand": "6a2daeeb-407e-46b4-967e-2a317603626b",
             "Target": "a7f0a816-c553-4faf-8890-e5ca54ae347a"
+          },
+          {
+            "__type": "ScrollZoom",
+            "__enabled": true,
+            "MaxCameraDistance": 400,
+            "MinCameraDistance": 128,
+            "ZoomSpeed": 8
           }
         ],
         "Children": [
@@ -267,6 +274,7 @@
                                                         "__enabled": true,
                                                         "FillAmount": 0.60003173,
                                                         "FillColorFoam": "1,0.16832,0.16832,0",
+                                                        "FillColorGain": 1,
                                                         "FillColorLower": "1,0,0,0",
                                                         "FillColorUpper": "0.94059,0.1071,0.1071,0",
                                                         "MaxWobble": 0.0025,
@@ -651,6 +659,7 @@
                                                         "__enabled": true,
                                                         "FillAmount": 0.5,
                                                         "FillColorFoam": "0,0,0,0",
+                                                        "FillColorGain": 1,
                                                         "FillColorLower": "0,0,0,0",
                                                         "FillColorUpper": "0,0,0,0",
                                                         "MaxWobble": 0.0025,
