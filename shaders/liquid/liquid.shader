@@ -112,8 +112,9 @@ PS
 	float3 g_vFFoamColor <Attribute("FillColorFoam"); Default3(0, 0.6, 0.7); >;
 	float3 g_vFillColorUpper < Attribute("FillColorUpper");  Default3(0, 0.5, 0.5); >;
 	float3 g_vFillColorLower < Attribute("FillColorLower");  Default3(0, 0, 1); >;
+	float g_flFillColorGain <Attribute("FillColorGain"); Default(1); >;
 	float g_flRimStrengthPower <Attribute("RimLightStrengthPower"); Default(2); >;
-	
+
 	float g_flFillWobbleFrequency <Attribute("FillWobbleFrequency"); UiType( Slider); Range(0, 64.0); Default(8);>;
 	float g_flFillWobbleAmplitude <Attribute("FillWobbleAmplitude"); UiType( Slider); Range(0, 1.0); Default(0.1);>;
 
@@ -133,6 +134,8 @@ PS
 
 		float3 colors = lerp(g_vFFoamColor, color, isFrontFace).xyz;
 		
+		colors *= g_flFillColorGain;
+
 		return float4(colors, fill);
 	}
 }

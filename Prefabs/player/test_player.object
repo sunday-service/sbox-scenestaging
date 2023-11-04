@@ -32,7 +32,7 @@
             "__enabled": true,
             "AnimationHelper": "ccd44669-5e3e-439c-93e3-084029d98ea0",
             "Body": "a7f0a816-c553-4faf-8890-e5ca54ae347a",
-            "CameraDistance": 200,
+            "CameraDistance": 100,
             "Eye": "c612ec15-7f04-40e5-b264-b48c2f6ba7c1",
             "FirstPerson": false,
             "Gravity": "0,0,800"
@@ -248,7 +248,7 @@
                                                     "Id": "4d6cf47e-5558-4344-8d7c-de8fdd2bdd08",
                                                     "Name": "Test Orb Liquid",
                                                     "Enabled": true,
-                                                    "Position": "0.567274,-2.09263,-0.0000007438839",
+                                                    "Position": "0.56,-2.5,-0.0000007438839",
                                                     "Rotation": "0,0,0,1",
                                                     "Scale": "1,1,1",
                                                     "Tags": "",
@@ -272,9 +272,7 @@
                                                         "MaxWobble": 0.0025,
                                                         "RimLightStrengthPower": 2.5,
                                                         "WobbleAmplitude": 0.08,
-                                                        "WobbleFrequency": 4,
-                                                        "WobbleX": 0,
-                                                        "WobbleY": 0
+                                                        "WobbleFrequency": 4
                                                       }
                                                     ]
                                                   }
@@ -658,9 +656,7 @@
                                                         "MaxWobble": 0.0025,
                                                         "RimLightStrengthPower": 2,
                                                         "WobbleAmplitude": 0.1,
-                                                        "WobbleFrequency": 8,
-                                                        "WobbleX": 0,
-                                                        "WobbleY": 0
+                                                        "WobbleFrequency": 8
                                                       }
                                                     ]
                                                   }

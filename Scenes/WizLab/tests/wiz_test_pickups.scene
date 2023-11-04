@@ -97,6 +97,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -143,6 +148,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -201,6 +211,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -259,6 +274,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -317,6 +337,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -363,6 +388,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -409,6 +439,11 @@
           "IsTrigger": true,
           "Scale": "50,50,96",
           "Surface": null
+        },
+        {
+          "__type": "PickupTrigger",
+          "__enabled": true,
+          "RespawnTime": 5
         }
       ],
       "Children": [
@@ -464,6 +499,11 @@
               "IsTrigger": true,
               "Scale": "50,50,96",
               "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
             }
           ],
           "Children": [
@@ -510,6 +550,11 @@
               "IsTrigger": true,
               "Scale": "50,50,96",
               "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
             }
           ],
           "Children": [
@@ -556,6 +601,11 @@
               "IsTrigger": true,
               "Scale": "50,50,96",
               "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
             }
           ],
           "Children": [
@@ -602,6 +652,11 @@
               "IsTrigger": true,
               "Scale": "50,50,96",
               "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
             }
           ],
           "Children": [
@@ -648,6 +703,11 @@
               "IsTrigger": true,
               "Scale": "50,50,96",
               "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
             }
           ],
           "Children": [
@@ -694,6 +754,11 @@
               "IsTrigger": true,
               "Scale": "50,50,96",
               "Surface": null
+            },
+            {
+              "__type": "PickupTrigger",
+              "__enabled": true,
+              "RespawnTime": 5
             }
           ],
           "Children": [

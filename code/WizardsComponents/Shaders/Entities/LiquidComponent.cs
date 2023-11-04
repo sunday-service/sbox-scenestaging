@@ -7,6 +7,8 @@ public sealed class LiquidComponent : BaseComponent, BaseComponent.ExecuteInEdit
 	[Property] public Color FillColorUpper { get; set; }
 	[Property] public Color FillColorLower { get; set; }
 
+	[Property, Range( 0, 8, 0.1f )] public float FillColorGain { get; set; } = 1;
+
 	[Property, Range(0, 8, 0.1f)] public float RimLightStrengthPower { get; set; } = 2;
 	[Property] public float MaxWobble { get; set; } = 0.08f;
 
@@ -44,8 +46,9 @@ public sealed class LiquidComponent : BaseComponent, BaseComponent.ExecuteInEdit
 			model.Attributes.Set( "FillColorFoam", FillColorFoam );
 			model.Attributes.Set( "FillColorUpper", FillColorUpper );
 			model.Attributes.Set( "FillColorLower", FillColorLower );
+			model.Attributes.Set( "FillColorGain", FillColorGain );
 			model.Attributes.Set( "RimLightStrengthPower", RimLightStrengthPower );
-
+			
 			model.Attributes.Set( "WobbleX", wobbleAmountX );
 			model.Attributes.Set( "WobbleY", wobbleAmountY );
 
