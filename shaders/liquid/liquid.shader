@@ -34,8 +34,6 @@ COMMON
 
 	float g_flWobbleX <Attribute("WobbleX"); Range(-8, 4); Default(0);>;
 	float g_flWobbleY <Attribute("WobbleY"); Range(-8, 4); Default(0);>;
-
-	
 }
 
 //=========================================================================================================================
@@ -92,7 +90,7 @@ VS
 	{
 		PixelInput i = ProcessVertex( v );
 
-		float3 vPositionWs = normalize(mul(CalculateInstancingObjectToWorldMatrix(v), v.vPositionOs.xyz));
+		float3 vPositionWs = normalize(mul(CalculateInstancingObjectToWorldMatrix(INSTANCED_SHADER_PARAMS(v)), v.vPositionOs.xyz));
 
 		float3 worldPosX = RotateAroundX(vPositionWs, 90);
 		float3 worldPosY = RotateAroundY(vPositionWs, 90);

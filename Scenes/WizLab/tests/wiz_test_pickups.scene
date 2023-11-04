@@ -173,11 +173,130 @@
             {
               "__type": "LiquidComponent",
               "__enabled": true,
-              "MaxWobble": 0.0025,
-              "WobbleAmplitude": 0.2,
-              "WobbleFrequency": 4,
-              "WobbleX": 0,
-              "WobbleY": 0
+              "FillAmount": 0.55,
+              "FillColorFoam": "0.9505,0.29174,0.29174,0",
+              "FillColorLower": "0.28218,0,0,0",
+              "FillColorUpper": "0.74257,0.26468,0.26468,0",
+              "MaxWobble": 0.002,
+              "RimLightStrengthPower": 1.75,
+              "WobbleAmplitude": 0.4,
+              "WobbleFrequency": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "e4d56a91-5b3f-49fe-9403-f2dd8d928bde",
+      "Name": "Mana Flask Pickup",
+      "Enabled": true,
+      "Position": "128,-128,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "trigger",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": true,
+          "Scale": "50,50,96",
+          "Surface": null
+        }
+      ],
+      "Children": [
+        {
+          "Id": "1061f455-4cc8-42f1-8f9e-2355b7e8d728",
+          "Name": "Model",
+          "Enabled": true,
+          "Position": "0,0,36",
+          "Rotation": "-0.2137946,0.05318272,-0.02720656,0.9750496",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/pickups/flasks/flask.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.1,
+              "RotationSpeed": 45
+            },
+            {
+              "__type": "LiquidComponent",
+              "__enabled": true,
+              "FillAmount": 0.68,
+              "FillColorFoam": "0.46797,0.56284,0.99505,0",
+              "FillColorLower": "0.01372,0.52201,0.55446,0",
+              "FillColorUpper": "0.03308,0.0185,0.74752,0",
+              "MaxWobble": 0.002,
+              "RimLightStrengthPower": 1.7,
+              "WobbleAmplitude": 0.4,
+              "WobbleFrequency": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "3da7ed71-18a5-4742-a322-3f872bc17cf4",
+      "Name": "Rejuvenation Flask Pickup",
+      "Enabled": true,
+      "Position": "0,-128,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "trigger",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": true,
+          "Scale": "50,50,96",
+          "Surface": null
+        }
+      ],
+      "Children": [
+        {
+          "Id": "25f9cd96-8064-4911-a7fa-49aae0663d1a",
+          "Name": "Model",
+          "Enabled": true,
+          "Position": "0,0,36",
+          "Rotation": "-0.2137946,0.05318272,-0.02720656,0.9750496",
+          "Scale": "1,1,1",
+          "Tags": "trigger",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/pickups/flasks/flask.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.1,
+              "RotationSpeed": 45
+            },
+            {
+              "__type": "LiquidComponent",
+              "__enabled": true,
+              "FillAmount": 0.68,
+              "FillColorFoam": "0.91406,0.38614,1,0",
+              "FillColorLower": "0.26319,0.01882,0.31683,0",
+              "FillColorUpper": "0.71745,0.08428,0.89604,0",
+              "MaxWobble": 0.002,
+              "RimLightStrengthPower": 1.7,
+              "WobbleAmplitude": 0.4,
+              "WobbleFrequency": 4
             }
           ]
         }

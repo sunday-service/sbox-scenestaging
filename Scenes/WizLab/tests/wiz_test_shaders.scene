@@ -138,7 +138,7 @@
           "Enabled": true,
           "Position": "0,0,48",
           "Rotation": "0,0,0,1",
-          "Scale": "3,3,3",
+          "Scale": "4,4,4",
           "Tags": "",
           "Components": [
             {
@@ -159,16 +159,92 @@
             {
               "__type": "LiquidComponent",
               "__enabled": true,
-              "FillAmount": -3.733377,
-              "FillColorFoam": "0.26125,0.33834,0.81188,0",
-              "FillColorLower": "0.06,1,0,0",
-              "FillColorUpper": "0,0.18,1,0",
-              "MaxWobble": 0.002,
-              "RimLightStrengthPower": 1.5,
-              "WobbleAmplitude": 0.1,
-              "WobbleFrequency": 8,
-              "WobbleX": 0.13333192,
-              "WobbleY": 0
+              "FillAmount": 0.63333493,
+              "FillColorFoam": "0.46535,0.5402,1,0",
+              "FillColorLower": "0,0.02228,0.37129,0",
+              "FillColorUpper": "0,0.88218,0.9802,0",
+              "MaxWobble": 0.004,
+              "RimLightStrengthPower": 2,
+              "WobbleAmplitude": 0.4,
+              "WobbleFrequency": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "3b64b0a7-fcb5-47e5-91b8-0d93133a8a4f",
+      "Name": "Liquid Shader 2",
+      "Enabled": true,
+      "Position": "0,75,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ColliderBoxComponent",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Scale": "36,36,128",
+          "Surface": null
+        }
+      ],
+      "Children": [
+        {
+          "Id": "495998c0-86f4-4dbf-93f2-dcc80d747142",
+          "Name": "Cube",
+          "Enabled": true,
+          "Position": "0,0,12.5",
+          "Rotation": "0,0,0,1",
+          "Scale": "0.5,0.5,0.5",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "c0e1a165-8975-46eb-a22f-38f062148050",
+          "Name": "Test Orb",
+          "Enabled": true,
+          "Position": "0,0,48",
+          "Rotation": "0,0,0,1",
+          "Scale": "4,4,4",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "ModelComponent",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": null,
+              "Model": "models/dev/test_orb/test_orb_weapon/test_orb_weapon_liquid.vmdl",
+              "ShouldCastShadows": true,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BobSpinComponent",
+              "__enabled": true,
+              "Amplitude": 0.05,
+              "RotationSpeed": 45
+            },
+            {
+              "__type": "LiquidComponent",
+              "__enabled": true,
+              "FillAmount": 0.63,
+              "FillColorFoam": "0.98515,0.59499,0.20483,0",
+              "FillColorLower": "1,0.10396,0.10396,0",
+              "FillColorUpper": "0.9802,0.68614,0,0",
+              "MaxWobble": 0.004,
+              "RimLightStrengthPower": 2,
+              "WobbleAmplitude": 0.4,
+              "WobbleFrequency": 2
             }
           ]
         }
