@@ -272,13 +272,13 @@
                                                       {
                                                         "__type": "LiquidComponent",
                                                         "__enabled": true,
-                                                        "FillAmount": 0.60003173,
-                                                        "FillColorFoam": "1,0.16832,0.16832,0",
-                                                        "FillColorGain": 1,
-                                                        "FillColorLower": "1,0,0,0",
-                                                        "FillColorUpper": "0.94059,0.1071,0.1071,0",
+                                                        "FillAmount": 0.51,
+                                                        "FillColorFoam": "0.06436,1,0.68188,0",
+                                                        "FillColorLower": "0,0.60891,0.40188,0",
+                                                        "FillColorUpper": "0.0097,0.9802,0.65023,0",
+                                                        "FoamThickness": 0.05,
                                                         "MaxWobble": 0.0025,
-                                                        "RimLightStrengthPower": 2.5,
+                                                        "RimLightStrengthPower": 2.8,
                                                         "WobbleAmplitude": 0.08,
                                                         "WobbleFrequency": 4
                                                       }
@@ -659,9 +659,9 @@
                                                         "__enabled": true,
                                                         "FillAmount": 0.5,
                                                         "FillColorFoam": "0,0,0,0",
-                                                        "FillColorGain": 1,
                                                         "FillColorLower": "0,0,0,0",
                                                         "FillColorUpper": "0,0,0,0",
+                                                        "FoamThickness": 0.05,
                                                         "MaxWobble": 0.0025,
                                                         "RimLightStrengthPower": 2,
                                                         "WobbleAmplitude": 0.1,
@@ -1493,6 +1493,11 @@
                 "Intensity": 0.8,
                 "Roundness": 0,
                 "Smoothness": 0.9
+              },
+              {
+                "__type": "Pixelate",
+                "__enabled": false,
+                "Scale": 4
               }
             ]
           },
