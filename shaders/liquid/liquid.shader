@@ -2,7 +2,7 @@
 
 HEADER
 {
-    Description = "Simple Liquid Shader";
+    Description = "Simple Liquid Shader for S&Box";
 }
 
 //=========================================================================================================================
@@ -28,12 +28,8 @@ COMMON
 {
     #include "common/shared.hlsl"
 
-    #ifndef S_ALPHA_TEST
-	#define S_ALPHA_TEST 1
-	#endif
-
-	float g_flWobbleX <Attribute("WobbleX"); Range(-8, 4); Default(0);>;
-	float g_flWobbleY <Attribute("WobbleY"); Range(-8, 4); Default(0);>;
+	float g_flWobbleX <Attribute("WobbleX");>;
+	float g_flWobbleY <Attribute("WobbleY");>;
 }
 
 //=========================================================================================================================
@@ -90,12 +86,14 @@ VS
 	{
 		PixelInput i = ProcessVertex( v );
 
-		float3 vPositionWs = normalize(mul(CalculateInstancingObjectToWorldMatrix(v), v.vPositionOs.xyz));
+		float3 vPositionWs = normalize(mul(CalculateInstancingObjectToWorldMatrix(v), float4(v.vPositionOs.xyz, 0.0)));
 
-		float3 worldPosX = RotateAroundX(vPositionWs, 90);
-		float3 worldPosY = RotateAroundY(vPositionWs, 90);
+		float3 worldPosX = RotateAroundX(vPositionWs, 90) * g_flWobbleX;
+		float3 worldPosY = RotateAroundY(vPositionWs, 90) * g_flWobbleY;
 
-		i.vFillPosition = vPositionWs + (worldPosX * g_flWobbleX) + (worldPosY * g_flWobbleY);
+		float3 vPositionWsOffset = worldPosX + worldPosY;
+
+		i.vFillPosition = vPositionWs + vPositionWsOffset;
 
 		return FinalizeVertex( i );
 	}
@@ -107,20 +105,21 @@ PS
 {
     #include "common/pixel.hlsl"
 
-    // Liquid Fill Level Attributes
-    float g_flFillAmount < Attribute("FillAmount"); Range(0, 1.0); Default(0.5f); >;
-    float g_flFoamThickness < Attribute("FoamThickness"); Range(0, 1.0); Default(0.05f); >;
+	// Liquid Fill Level Attributes
+    float g_flFillAmount < Attribute("FillAmount"); Range(0, 1.0); Default(0.5f);>;
+    float g_flFoamThickness < Attribute("FoamThickness"); Range(0, 1.0); Default(0.05f);>;
 
     // Liquid Animation Attributes
-    float g_flFillWobbleFrequency <Attribute("FillWobbleFrequency"); UiType( Slider); Range(0, 64.0); Default(8);>;
-	float g_flFillWobbleAmplitude <Attribute("FillWobbleAmplitude"); UiType( Slider); Range(0, 1.0); Default(0.1);>;
+    float g_flFillWobbleFrequency <Attribute("FillWobbleFrequency"); UiType( Slider); Range(0, 64.0); Default(8); >;
+	float g_flFillWobbleAmplitude <Attribute("FillWobbleAmplitude"); UiType( Slider); Range(0, 1.0); Default(0.1); >;
 	
     // Liquid Color Attributes
-	float3 g_vFoamColor <Attribute("FillColorFoam"); Default3(0, 0.6, 0.7); >;
-	float3 g_vFillColorUpper < Attribute("FillColorUpper");  Default3(0, 0.5, 0.5); >;
-	float3 g_vFillColorLower < Attribute("FillColorLower");  Default3(0, 0, 1); >;
+	float3 g_vFoamColor <Attribute("FillColorFoam"); Default3(0, 0.6, 0.7);>;
+	float3 g_vFillColorUpper < Attribute("FillColorUpper");  Default3(0, 0.5, 0.5);>;
+	float3 g_vFillColorLower < Attribute("FillColorLower");  Default3(0, 0, 1);>;
 	
-	float g_flRimStrengthPower <Attribute("RimLightStrengthPower"); Default(2); >;
+	// Rim Lighting Attributes
+	float g_flRimStrengthPower <Attribute("RimLightStrengthPower"); Default(2);>;
 
     float4 MainPs(PixelInput i, bool isFrontFace : SV_IsFrontFace)  : SV_Target0
     {
@@ -129,7 +128,8 @@ PS
 
 		float fillPosition = i.vFillPosition.z + wobble;
         float fillEdge = (2 * g_flFillAmount) - 1.0f;
-        float fillAmount = step(fillPosition, fillEdge);
+        
+		float fillAmount = step(fillPosition, fillEdge);
         
 		float3 fillColor = lerp(g_vFillColorUpper, g_vFillColorLower, fillPosition);
 
@@ -139,8 +139,10 @@ PS
         float3 frontFaceColor = fillColor + frensel;
         float3 backFaceColor = g_vFoamColor;
 
-        float4 result = float4(lerp(backFaceColor, frontFaceColor, isFrontFace), fillAmount);    
+        float3 result = lerp(backFaceColor, frontFaceColor, isFrontFace);  
         
-        return result;
+		clip(fillAmount > 0 ? 1 : -1);
+
+        return float4(result, 1.0);
     }
 }

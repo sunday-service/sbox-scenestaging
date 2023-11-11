@@ -30,7 +30,7 @@
 						[
 							{
 								from = "sphere.002.vmat"
-								to = "materials/shaders/liquid/liquid_default.vmat"
+								to = "models/citizen_props/wineglass02.vmat"
 							},
 							{
 								from = "sphere.003.vmat"
@@ -55,14 +55,14 @@
 								per_material_options = 
 								[
 									{
-										material_name = "materials/shaders/liquid/liquid_default.vmat"
+										material_name = "models/citizen_props/wineglass02.vmat"
 										inside_out_sort = false
 										make_two_sided = false
 									},
 									{
 										material_name = "materials/glass/glass_a.vmat"
-										inside_out_sort = false
-										make_two_sided = true
+										inside_out_sort = true
+										make_two_sided = false
 									},
 								]
 							},
