@@ -38,7 +38,7 @@
 							},
 							{
 								from = "flaskliquid.vmat"
-								to = "materials/shaders/liquid/liquid.vmat"
+								to = "materials/shaders/liquid/liquid_default.vmat"
 							},
 						]
 						use_global_default = false

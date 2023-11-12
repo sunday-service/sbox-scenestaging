@@ -1,0 +1,103 @@
+{
+  "GameObjects": [
+    {
+      "Id": "c2981bb4-7883-419d-b1f8-36c500547ea0",
+      "Name": "Default Test Environment",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "__Prefab": "prefabs/environment/default_test_environment.object"
+    },
+    {
+      "Id": "80c00271-be4f-479b-ae60-15502c4b29fc",
+      "Name": "default_player",
+      "Enabled": true,
+      "Position": "86.37628,-137.22,-0.007324219",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "__Prefab": "prefabs/player/default_player.object"
+    },
+    {
+      "Id": "f2cd4bb4-08c0-4f84-af34-c95954293fa2",
+      "Name": "Object",
+      "Enabled": true,
+      "Position": "0,0,41.38201",
+      "Rotation": "0,0,0,1",
+      "Scale": "4,4,4",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ModelComponent",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": null,
+          "Model": "models/dev/test_orb/test_orb_weapon/test_orb_weapon_liquid.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "LiquidComponent",
+          "__enabled": true,
+          "FillAmount": 0.5,
+          "FillColorFoam": "1,0.22772,0.22772,0",
+          "FillColorLower": "0.21287,0,0,0",
+          "FillColorUpper": "1,0,0,0",
+          "FoamThickness": 0.05,
+          "MaxWobble": 0.004,
+          "RimLightStrengthPower": 3.8,
+          "WobbleAmplitude": 0.05,
+          "WobbleFrequency": 2
+        },
+        {
+          "__type": "BobSpinComponent",
+          "__enabled": true,
+          "Amplitude": 0.05,
+          "RotationSpeed": 45
+        }
+      ]
+    },
+    {
+      "Id": "f5734569-69a7-4efb-a694-b06a5da34917",
+      "Name": "Object",
+      "Enabled": true,
+      "Position": "0,133.4853,41.38201",
+      "Rotation": "0,0,0,1",
+      "Scale": "4,4,4",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ModelComponent",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": null,
+          "Model": "models/dev/test_orb/test_orb_weapon/test_orb_weapon_liquid.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BobSpinComponent",
+          "__enabled": true,
+          "Amplitude": 0.05,
+          "RotationSpeed": 45
+        },
+        {
+          "__type": "LiquidComponent",
+          "__enabled": true,
+          "FillAmount": 0.5,
+          "FillColorFoam": "0,0.6,0.7,1",
+          "FillColorLower": "0,0,1,1",
+          "FillColorUpper": "0,0.5,0.5,1",
+          "FoamThickness": 0.05,
+          "MaxWobble": 0.004,
+          "RimLightStrengthPower": 1.5,
+          "WobbleAmplitude": 0.05,
+          "WobbleFrequency": 4
+        }
+      ]
+    }
+  ],
+  "__references": []
+}

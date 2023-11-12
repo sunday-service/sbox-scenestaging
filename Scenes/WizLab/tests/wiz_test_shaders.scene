@@ -85,16 +85,6 @@
       ]
     },
     {
-      "Id": "eeec0997-e2cf-4d07-bd58-06a051738098",
-      "Name": "Test Player",
-      "Enabled": true,
-      "Position": "-95.6802,0,0.1",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "__Prefab": "prefabs/player/test_player.object"
-    },
-    {
       "Id": "48faf862-0218-4322-99f0-06d11e294aa9",
       "Name": "Liquid Shader",
       "Enabled": true,
@@ -161,9 +151,9 @@
               "__enabled": true,
               "FillAmount": 0.63333493,
               "FillColorFoam": "0.46535,0.5402,1,0",
-              "FillColorGain": 2.7,
               "FillColorLower": "0,0.02228,0.37129,0",
               "FillColorUpper": "0,0.88218,0.9802,0",
+              "FoamThickness": 0.05,
               "MaxWobble": 0.004,
               "RimLightStrengthPower": 2,
               "WobbleAmplitude": 0.4,
@@ -240,9 +230,9 @@
               "__enabled": true,
               "FillAmount": 0.63,
               "FillColorFoam": "0.98515,0.59499,0.20483,0",
-              "FillColorGain": 2,
               "FillColorLower": "1,0.10396,0.10396,0",
               "FillColorUpper": "0.9802,0.68614,0,0",
+              "FoamThickness": 0.05,
               "MaxWobble": 0.004,
               "RimLightStrengthPower": 2,
               "WobbleAmplitude": 0.4,
@@ -317,6 +307,55 @@
           ]
         }
       ]
+    },
+    {
+      "Id": "519964a4-0cb5-48a3-b376-0b8664c5a344",
+      "Name": "test_duck",
+      "Enabled": true,
+      "Position": "-25.98388,-286.6563,45.00755",
+      "Rotation": "0.000000004517352,-0.07578792,-0.000000000000009708502,0.9971238",
+      "Scale": "0.05,0.05,0.05",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "ModelComponent",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": null,
+          "Model": "models/dev/test_duck/test_duck.vmdl",
+          "ShouldCastShadows": true,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "LiquidComponent",
+          "__enabled": true,
+          "FillAmount": 0.78,
+          "FillColorFoam": "0.7,0.686,0,1",
+          "FillColorLower": "0.98,1,0,1",
+          "FillColorUpper": "0.49,0.5,0,1",
+          "FoamThickness": 0.05,
+          "MaxWobble": 0.004,
+          "RimLightStrengthPower": 5.3,
+          "WobbleAmplitude": 0.05,
+          "WobbleFrequency": 4
+        },
+        {
+          "__type": "BobSpinComponent",
+          "__enabled": true,
+          "Amplitude": 0.1,
+          "RotationSpeed": 45
+        }
+      ]
+    },
+    {
+      "Id": "a65aa0d9-dac5-49b8-b753-998cff37b0c2",
+      "Name": "test_player",
+      "Enabled": true,
+      "Position": "73.52324,-282.8931,0.001876831",
+      "Rotation": "0,0.0000003576279,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "__Prefab": "prefabs/player/wiz_test_player.object"
     }
   ],
   "__references": []
